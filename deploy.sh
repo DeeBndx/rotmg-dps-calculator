@@ -5,7 +5,6 @@ set -e
 
 # build
 yarn build
-yarn export
 
 # navigate into the build output directory
 cd build
