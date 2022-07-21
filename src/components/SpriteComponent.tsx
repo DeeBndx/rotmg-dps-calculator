@@ -43,7 +43,7 @@ export default class SpriteComponent extends React.Component<Props, {}> {
 			let img_url: string | undefined;
 			const img = sprite?.getAtlasSource()?.split("/");
 			if (img) {
-				img_url = `/assets/${img.at(img.length - 1)}`;
+				img_url = `/atlases/${img.at(img.length - 1)}`;
 				if (process.env.NODE_ENV !== "development") {
 					img_url = `/rotmg-dps-calculator${img_url}`;
 				}
@@ -51,7 +51,7 @@ export default class SpriteComponent extends React.Component<Props, {}> {
 
 			style.width = spriteSize + "px";
 			style.height = spriteSize + "px";
-			style.backgroundImage = `url("atlases/${img_url}")`;
+			style.backgroundImage = `url("${img_url}")`;
 			style.backgroundPosition = `-${Math.floor(data.position.x)}px -${Math.floor(data.position.y)}px`
 			style.transform = `scale(${ratio * 100}%)`
 			style.transformOrigin = "0% 0%";
