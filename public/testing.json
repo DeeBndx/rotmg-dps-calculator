@@ -11,7 +11,7 @@
 				"type": "object"
 			},
 			"sources": [
-				"rotmg-mirror.github.io/rotmg-metadata/assets/testing/xml/players.xml"
+				"https://rotmg-mirror.github.io/rotmg-metadata/assets/testing/xml/players.xml"
 			]
 		},
 		{
@@ -23,9 +23,9 @@
 				"type": "object"
 			},
 			"sources": [
-				"rotmg-mirror.github.io/rotmg-metadata/assets/testing/xml/equip.xml",
-				"rotmg-mirror.github.io/rotmg-metadata/assets/testing/xml/spiderDenObjects.xml",
-				"rotmg-mirror.github.io/rotmg-metadata/assets/testing/xml/equipmentsets.xml"
+				"https://rotmg-mirror.github.io/rotmg-metadata/assets/testing/xml/equip.xml",
+				"https://rotmg-mirror.github.io/rotmg-metadata/assets/testing/xml/spiderDenObjects.xml",
+				"https://rotmg-mirror.github.io/rotmg-metadata/assets/testing/xml/equipmentsets.xml"
 			]
 		},
 		{
@@ -33,10 +33,10 @@
 			"loader": "sprite-loader",
 			"sourceLoader": "url-to-text",
 			"sources": [
-				"rotmg-mirror.github.io/rotmg-metadata/assets/testing/atlases/spritesheet.json"
+				"https://rotmg-mirror.github.io/rotmg-metadata/assets/testing/atlases/spritesheet.json"
 			],
 			"settings": {
-				"atlasRoot": "rotmg-mirror.github.io/rotmg-metadata/assets/testing/atlases/"
+				"atlasRoot": "https://rotmg-mirror.github.io/rotmg-metadata/assets/testing/atlases/"
 			}
 		}
 	]
