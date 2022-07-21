@@ -32,6 +32,9 @@
 			"type": "sprites",
 			"loader": "sprite-loader",
 			"sourceLoader": "url-to-text",
+			"settings": {
+				"atlasRoot": "https://rotmg-mirror.github.io/rotmg-metadata/production/atlases/"
+			},
 			"sources": [
 				"https://rotmg-mirror.github.io/rotmg-metadata/production/atlases/spritesheet.json"
 			]
