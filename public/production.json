@@ -11,7 +11,7 @@
 				"type": "object"
 			},
 			"sources": [
-				"/xml/players.xml"
+				"/rotmg-dps-calculator/xml/players.xml"
 			]
 		},
 		{
@@ -23,9 +23,9 @@
 				"type": "object"
 			},
 			"sources": [
-				"/xml/equip.xml",
-				"/xml/spiderDenObjects.xml",
-				"/xml/equipmentsets.xml"
+				"/rotmg-dps-calculator/xml/equip.xml",
+				"/rotmg-dps-calculator/xml/spiderDenObjects.xml",
+				"/rotmg-dps-calculator/xml/equipmentsets.xml"
 			]
 		},
 		{
@@ -33,7 +33,7 @@
 			"loader": "sprite-loader",
 			"sourceLoader": "url-to-text",
 			"sources": [
-				"/atlases/spritesheet.json"
+				"/rotmg-dps-calculator/atlases/spritesheet.json"
 			]
 		}
 	]
