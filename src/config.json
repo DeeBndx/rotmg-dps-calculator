@@ -11,7 +11,7 @@
 				"type": "object"
 			},
 			"sources": [
-				"https://rotmg-mirror.github.io/rotmg-metadata/production/xml/players.xml"
+				"rotmg-mirror.github.io/rotmg-metadata/assets/production/xml/players.xml"
 			]
 		},
 		{
@@ -23,8 +23,8 @@
 				"type": "object"
 			},
 			"sources": [
-				"https://rotmg-mirror.github.io/rotmg-metadata/production/xml/equip.xml",
-				"https://rotmg-mirror.github.io/rotmg-metadata/production/xml/equipmentsets.xml"
+				"rotmg-mirror.github.io/rotmg-metadata/assets/production/xml/equip.xml",
+				"rotmg-mirror.github.io/rotmg-metadata/assets/production/xml/equipmentsets.xml"
 			]
 		},
 		{
@@ -32,7 +32,7 @@
 			"loader": "sprite-loader",
 			"sourceLoader": "url-to-text",
 			"sources": [
-				"https://rotmg-mirror.github.io/rotmg-metadata/production/atlases/spritesheet.json"
+				"rotmg-mirror.github.io/rotmg-metadata/assets/production/atlases/spritesheet.json"
 			]
 		}
 	]
