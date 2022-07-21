@@ -34412,7 +34412,7 @@
     <SlotType>10</SlotType>
     <Description>Unlocks new items in the Item Forge. Also, one Blueprint can be dismantled for some Forgefire reduction.</Description>
     <Sound>use_potion</Sound>
-    <Activate id="Sprite WAND,ST,TAB_ST,ST_WEAPONaff of the Crystal Serpent,Fairy Ring,Snake Skin Armor">UnlockForgeBlueprint</Activate>
+    <Activate id="Sprite Wand,Staff of the Crystal Serpent,Fairy Ring,Snake Skin Armor">UnlockForgeBlueprint</Activate>
     <Consumable />
     <BagType>7</BagType>
     <feedPower>500</feedPower>
@@ -44804,7 +44804,7 @@
     <DisplayId>Mythical ST Chest</DisplayId>
     <Class>Equipment</Class>
     <Item />
-    <Texture>
+    <Texture xOffset="-1" yOffset="0">
       <File>d2LofiObjEmbed</File>
       <Index>1130</Index>
     </Texture>
@@ -45129,12 +45129,28 @@
     <DisplayId>Mythical ST Crate</DisplayId>
     <Class>Equipment</Class>
     <Item />
-    <Texture xOffset="2" yOffset="0">
+    <Texture xOffset="-2" yOffset="0">
       <File>d2LofiObjEmbed</File>
       <Index>1173</Index>
     </Texture>
     <SlotType>10</SlotType>
     <Description>Open it to find one of the following:\n\n*Mythical ST Gem\n*Mythical ST Shards\n*Mystery ST Chest\n*Mystery ST Shards\n*Golden Lucky Clover\n*Lucky Clover\n*Loot Drop Potion</Description>
+    <Activate>MysteryDyes</Activate>
+    <Consumable />
+    <Soulbound />
+    <BagType>8</BagType>
+    <Track />
+    <Labels>EQUIPMENT,CONSUMABLE,UT</Labels>
+  </Object>
+  <Object type="0x7280" id="Glacial Cache">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>d2LofiObjEmbed</File>
+      <Index>1176</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>It's been told this cache has been frozen for ages...</Description>
     <Activate>MysteryDyes</Activate>
     <Consumable />
     <Soulbound />
