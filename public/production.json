@@ -11,7 +11,7 @@
 				"type": "object"
 			},
 			"sources": [
-				"https://www.haizor.net/rotmg/assets/production/xml/players.xml"
+				"https://rotmg-mirror.github.io/rotmg-metadata/production/xml/players.xml"
 			]
 		},
 		{
@@ -23,9 +23,9 @@
 				"type": "object"
 			},
 			"sources": [
-				"https://www.haizor.net/rotmg/assets/production/xml/equip.xml",
-				"https://www.haizor.net/rotmg/assets/production/xml/spiderDenObjects.xml",
-				"https://www.haizor.net/rotmg/assets/production/xml/equipmentsets.xml"
+				"https://rotmg-mirror.github.io/rotmg-metadata/production/xml/equip.xml",
+				"https://rotmg-mirror.github.io/rotmg-metadata/production/xml/spiderDenObjects.xml",
+				"https://rotmg-mirror.github.io/rotmg-metadata/production/xml/equipmentsets.xml"
 			]
 		},
 		{
@@ -33,7 +33,7 @@
 			"loader": "sprite-loader",
 			"sourceLoader": "url-to-text",
 			"sources": [
-				"https://www.haizor.net/rotmg/assets/production/atlases/spritesheet.json"
+				"https://rotmg-mirror.github.io/rotmg-metadata/production/atlases/spritesheet.json"
 			]
 		}
 	]
