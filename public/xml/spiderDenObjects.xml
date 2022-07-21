@@ -1,1205 +1,1205 @@
 <?xml version="1.0" encoding="utf-8"?>
-<objects>
-  <object type="0x3742" id="Spider Star">
-    <class>Projectile</class>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x04</index>
-    </texture>
-    <rotation>140</rotation>
-  </object>
-  <object type="0x3743" id="Web Star">
-    <class>Projectile</class>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x05</index>
-    </texture>
-    <rotation>80</rotation>
-  </object>
-  <object type="0x3744" id="Venom Star">
-    <class>Projectile</class>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x06</index>
-    </texture>
-    <rotation>-100</rotation>
-  </object>
-  <object type="0x3746" id="Purple Spider Venom">
-    <class>Projectile</class>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x40</index>
-    </texture>
-  </object>
-  <object type="0x3747" id="Red Spider Venom">
-    <class>Projectile</class>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x41</index>
-    </texture>
-  </object>
-  <object type="0x3748" id="Yellow Spider Venom">
-    <class>Projectile</class>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x42</index>
-    </texture>
-  </object>
-  <object type="0x3749" id="Green Spider Venom">
-    <class>Projectile</class>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x43</index>
-    </texture>
-  </object>
-  <object type="0x374a" id="Blue Spider Venom">
-    <class>Projectile</class>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x44</index>
-    </texture>
-  </object>
-  <object type="0x374b" id="Arachna Venom">
-    <class>Projectile</class>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x45</index>
-    </texture>
-    <anglecorrection>1</anglecorrection>
-  </object>
-  <object type="0x3745" id="Spider Shuriken">
-    <class>Equipment</class>
-    <item/>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x04</index>
-    </texture>
-    <slottype>25</slottype>
-    <description>An arachnid star which slings silk to tangle predators while granting oneself the speed and stamina of Arachna's most agile young.</description>
-    <sound>spell/fire_spray</sound>
-    <extratooltipdata>
-      <effectinfo description="" name="While Key Held"/>
-      <effectinfo description="Speedy on self" name=""/>
-      <effectinfo description="Drain 5 MP/sec" name=""/>
-      <effectinfo description="" name="When Key Released"/>
-    </extratooltipdata>
-    <projectile>
-      <objectid>Web Star</objectid>
-      <speed>150</speed>
-      <mindamage>150</mindamage>
-      <maxdamage>250</maxdamage>
-      <lifetimems>1000</lifetimems>
-      <size>120</size>
-      <conditioneffect duration="2">Slowed</conditioneffect>
-      <passescover/>
-    </projectile>
-    <conditioneffect duration="2">Slowed</conditioneffect>
-    <usable/>
-    <bagtype>4</bagtype>
-    <mpcost>0</mpcost>
-    <mpendcost>50</mpendcost>
-    <mpcostpersecond>5</mpcostpersecond>
-    <multiphase/>
-    <activate>ShurikenAbility</activate>
-    <feedpower>170</feedpower>
-    <labels>EQUIPMENT,ABILITY,SHURIKEN,UT,POWERTIER_D,TRADEABLE,MPCOST</labels>
-  </object>
-  <object type="0x1732" id="Arachna Summoner">
-    <class>GameObject</class>
-    <texture>
-      <file>invisible</file>
-      <index>0</index>
-    </texture>
-    <size>0</size>
-    <presentation>
-      <style id="SetAlt1">
+<Objects>
+  <Object type="0x3742" id="Spider Star">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x04</Index>
+    </Texture>
+    <Rotation>140</Rotation>
+  </Object>
+  <Object type="0x3743" id="Web Star">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x05</Index>
+    </Texture>
+    <Rotation>80</Rotation>
+  </Object>
+  <Object type="0x3744" id="Venom Star">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x06</Index>
+    </Texture>
+    <Rotation>-100</Rotation>
+  </Object>
+  <Object type="0x3746" id="Purple Spider Venom">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x40</Index>
+    </Texture>
+  </Object>
+  <Object type="0x3747" id="Red Spider Venom">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x41</Index>
+    </Texture>
+  </Object>
+  <Object type="0x3748" id="Yellow Spider Venom">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x42</Index>
+    </Texture>
+  </Object>
+  <Object type="0x3749" id="Green Spider Venom">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x43</Index>
+    </Texture>
+  </Object>
+  <Object type="0x374a" id="Blue Spider Venom">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x44</Index>
+    </Texture>
+  </Object>
+  <Object type="0x374b" id="Arachna Venom">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x45</Index>
+    </Texture>
+    <AngleCorrection>1</AngleCorrection>
+  </Object>
+  <Object type="0x3745" id="Spider Shuriken">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x04</Index>
+    </Texture>
+    <SlotType>25</SlotType>
+    <Description>An arachnid star which slings silk to tangle predators while granting oneself the speed and stamina of Arachna's most agile young.</Description>
+    <Sound>spell/fire_spray</Sound>
+    <ExtraTooltipData>
+      <EffectInfo description="" name="While Key Held" />
+      <EffectInfo description="Speedy on self" name="" />
+      <EffectInfo description="Drain 5 MP/sec" name="" />
+      <EffectInfo description="" name="When Key Released" />
+    </ExtraTooltipData>
+    <Projectile>
+      <ObjectId>Web Star</ObjectId>
+      <Speed>150</Speed>
+      <MinDamage>150</MinDamage>
+      <MaxDamage>250</MaxDamage>
+      <LifetimeMS>1000</LifetimeMS>
+      <Size>120</Size>
+      <ConditionEffect duration="2">Slowed</ConditionEffect>
+      <PassesCover />
+    </Projectile>
+    <ConditionEffect duration="2">Slowed</ConditionEffect>
+    <Usable />
+    <BagType>4</BagType>
+    <MpCost>0</MpCost>
+    <MpEndCost>50</MpEndCost>
+    <MpCostPerSecond>5</MpCostPerSecond>
+    <MultiPhase />
+    <Activate>ShurikenAbility</Activate>
+    <feedPower>170</feedPower>
+    <Labels>EQUIPMENT,ABILITY,SHURIKEN,UT,POWERTIER_D,TRADEABLE,MPCOST</Labels>
+  </Object>
+  <Object type="0x1732" id="Arachna Summoner">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>0</Size>
+    <Presentation>
+      <Style id="SetAlt1">
         <StyleStep altTextureId="1">SetAltTexture</StyleStep>
-      </style>
-    </presentation>
-  </object>
-  <object type="0x0936" id="Arachna the Spider Queen">
-    <class>Character</class>
-    <animatedtexture>
-      <file>spiderDenChars16x16</file>
-      <index>0</index>
-    </animatedtexture>
-    <portrait>
-      <animatedtexture>
-        <file>spiderDenChars16x16</file>
-        <index>0</index>
-      </animatedtexture>
-    </portrait>
-    <alttexture id="1">
-      <texture>
-        <file>spiderDenObjects16x16</file>
-        <index>0x00</index>
-      </texture>
-    </alttexture>
-    <hitsound>monster/spider_queen_hit</hitsound>
-    <deathsound>monster/spider_queen_death</deathsound>
-    <size>100</size>
-    <maxhitpoints>3200</maxhitpoints>
-    <defense>4</defense>
-    <enemy/>
-    <god/>
-    <stasisimmune/>
-    <quest/>
-    <exp>600</exp>
-    <eventchestboss/>
-    <trackloot/>
-    <noarticle/>
-    <projectile id="0">
-      <objectid>Arachna Venom</objectid>
-      <speed>56</speed>
-      <damage>40</damage>
-      <lifetimems>2600</lifetimems>
-      <size>120</size>
-      <multihit/>
-    </projectile>
-    <projectile id="1">
-      <objectid>Venom Star</objectid>
-      <speed>50</speed>
-      <damage>75</damage>
-      <size>100</size>
-      <lifetimems>3000</lifetimems>
-      <multihit/>
-      <conditioneffect duration="5">Weak</conditioneffect>
-      <particletrail intensity="1" lifetimems="400">0x00ff00</particletrail>
-    </projectile>
-    <projectile id="2">
-      <objectid>Spider Star</objectid>
-      <speed>0</speed>
-      <damage>50</damage>
-      <size>100</size>
-      <lifetimems>5000</lifetimems>
-      <conditioneffect duration="1.5">Bleeding</conditioneffect>
-    </projectile>
-    <healthbarboss radius="30"/>
-    <killstat stat="GrotesqueKills"/>
-    <killstat stat="GodKills"/>
-    <damagebasedxp/>
-    <bleedmax>1</bleedmax>
-    <labels>ENEMY,BOSS,QUEST,STASISIMMUNE,TRACKLOOT,GROTESQUE,GOD</labels>
-    <specialspawn category="Bis">Spider Den Portal</specialspawn>
-    <specialspawn category="Chef">Soft Drink</specialspawn>
-    <specialspawn category="PetCollector">Common Insect Egg</specialspawn>
-    <specialspawn category="Generous">Beginner Quest Chest Item</specialspawn>
-    <specialspawn category="NobleBoss">Court of Oryx Portal</specialspawn>
-    <specialspawn category="Dimitus">Dimitus Easy</specialspawn>
-    <specialspawn category="Prismimic">Prismimic Summoner</specialspawn>
-    <specialspawn category="MysteryStatPotion">Mystery Stat Pot</specialspawn>
-    <specialspawn category="Colorful">Mystery Dye (Accessory)</specialspawn>
-    <specialspawn category="ExaltedBanner">ExaltationBanner</specialspawn>
-    <specialspawn category="AgentOfOryx_Ring">Shard of the Advisor x1</specialspawn>
-    <specialspawn category="Souvenir_LOW">Poison Fang Dagger</specialspawn>
-    <specialspawn category="Wanderer_Boss">Wander Portal Ultra Easy</specialspawn>
-    <specialspawn category="SkinHunter" perplayer="true">Eggshell Spider Pet Stone</specialspawn>
-    <specialspawn category="Key_Fairy" perplayer="true">Key Fairy Easy</specialspawn>
-  </object>
-  <object type="0x0937" id="Arachna Web Spoke 1">
-    <displayid>Arachna Element</displayid>
-    <group>AttackType</group>
-    <class>Character</class>
-    <enemy/>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x25</index>
-    </texture>
-    <alttexture id="1">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x26</index>
-      </texture>
-    </alttexture>
-    <alttexture id="2">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x27</index>
-      </texture>
-    </alttexture>
-    <size>200</size>
-    <invincible/>
-    <projectile id="0">
-      <objectid>Web Thread</objectid>
-      <damage>0</damage>
-      <size>170</size>
-      <speed>50</speed>
-      <lifetimems>2030</lifetimems>
-      <conditioneffect duration="3">Slowed</conditioneffect>
-      <multihit/>
-    </projectile>
-    <projectile id="1">
-      <objectid>Web Star</objectid>
-      <damage>30</damage>
-      <speed>40</speed>
-      <size>100</size>
-      <lifetimems>5000</lifetimems>
-      <conditioneffect duration="2">Slowed</conditioneffect>
-    </projectile>
-    <labels>ENEMY</labels>
-    <presentation>
-      <style id="SetAlt1">
+      </Style>
+    </Presentation>
+  </Object>
+  <Object type="0x0936" id="Arachna the Spider Queen">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>spiderDenChars16x16</File>
+      <Index>0</Index>
+    </AnimatedTexture>
+    <Portrait>
+      <AnimatedTexture>
+        <File>spiderDenChars16x16</File>
+        <Index>0</Index>
+      </AnimatedTexture>
+    </Portrait>
+    <AltTexture id="1">
+      <Texture>
+        <File>spiderDenObjects16x16</File>
+        <Index>0x00</Index>
+      </Texture>
+    </AltTexture>
+    <HitSound>monster/spider_queen_hit</HitSound>
+    <DeathSound>monster/spider_queen_death</DeathSound>
+    <Size>100</Size>
+    <MaxHitPoints>3200</MaxHitPoints>
+    <Defense>4</Defense>
+    <Enemy />
+    <God />
+    <StasisImmune />
+    <Quest />
+    <Exp>600</Exp>
+    <EventChestBoss />
+    <TrackLoot />
+    <NoArticle />
+    <Projectile id="0">
+      <ObjectId>Arachna Venom</ObjectId>
+      <Speed>56</Speed>
+      <Damage>40</Damage>
+      <LifetimeMS>2600</LifetimeMS>
+      <Size>120</Size>
+      <MultiHit />
+    </Projectile>
+    <Projectile id="1">
+      <ObjectId>Venom Star</ObjectId>
+      <Speed>50</Speed>
+      <Damage>75</Damage>
+      <Size>100</Size>
+      <LifetimeMS>3000</LifetimeMS>
+      <MultiHit />
+      <ConditionEffect duration="5">Weak</ConditionEffect>
+      <ParticleTrail intensity="1" lifetimeMS="400">0x00ff00</ParticleTrail>
+    </Projectile>
+    <Projectile id="2">
+      <ObjectId>Spider Star</ObjectId>
+      <Speed>0</Speed>
+      <Damage>50</Damage>
+      <Size>100</Size>
+      <LifetimeMS>5000</LifetimeMS>
+      <ConditionEffect duration="1.5">Bleeding</ConditionEffect>
+    </Projectile>
+    <HealthBarBoss radius="30" />
+    <KillStat stat="GrotesqueKills" />
+    <KillStat stat="GodKills" />
+    <DamageBasedXP />
+    <BleedMax>1</BleedMax>
+    <Labels>ENEMY,BOSS,QUEST,STASISIMMUNE,TRACKLOOT,GROTESQUE,GOD</Labels>
+    <SpecialSpawn category="Bis">Spider Den Portal</SpecialSpawn>
+    <SpecialSpawn category="Chef">Soft Drink</SpecialSpawn>
+    <SpecialSpawn category="PetCollector">Common Insect Egg</SpecialSpawn>
+    <SpecialSpawn category="Generous">Beginner Quest Chest Item</SpecialSpawn>
+    <SpecialSpawn category="NobleBoss">Court of Oryx Portal</SpecialSpawn>
+    <SpecialSpawn category="Dimitus">Dimitus Easy</SpecialSpawn>
+    <SpecialSpawn category="Prismimic">Prismimic Summoner</SpecialSpawn>
+    <SpecialSpawn category="MysteryStatPotion">Mystery Stat Pot</SpecialSpawn>
+    <SpecialSpawn category="Colorful">Mystery Dye (Accessory)</SpecialSpawn>
+    <SpecialSpawn category="ExaltedBanner">ExaltationBanner</SpecialSpawn>
+    <SpecialSpawn category="AgentOfOryx_Ring">Shard of the Advisor x1</SpecialSpawn>
+    <SpecialSpawn category="Souvenir_LOW">Poison Fang Dagger</SpecialSpawn>
+    <SpecialSpawn category="Wanderer_Boss">Wander Portal Ultra Easy</SpecialSpawn>
+    <SpecialSpawn category="SkinHunter" perPlayer="true">Eggshell Spider Pet Stone</SpecialSpawn>
+    <SpecialSpawn category="Key_Fairy" perPlayer="true">Key Fairy Easy</SpecialSpawn>
+  </Object>
+  <Object type="0x0937" id="Arachna Web Spoke 1">
+    <DisplayId>Arachna Element</DisplayId>
+    <Group>AttackType</Group>
+    <Class>Character</Class>
+    <Enemy />
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x25</Index>
+    </Texture>
+    <AltTexture id="1">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x26</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="2">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x27</Index>
+      </Texture>
+    </AltTexture>
+    <Size>200</Size>
+    <Invincible />
+    <Projectile id="0">
+      <ObjectId>Web Thread</ObjectId>
+      <Damage>0</Damage>
+      <Size>170</Size>
+      <Speed>50</Speed>
+      <LifetimeMS>2030</LifetimeMS>
+      <ConditionEffect duration="3">Slowed</ConditionEffect>
+      <MultiHit />
+    </Projectile>
+    <Projectile id="1">
+      <ObjectId>Web Star</ObjectId>
+      <Damage>30</Damage>
+      <Speed>40</Speed>
+      <Size>100</Size>
+      <LifetimeMS>5000</LifetimeMS>
+      <ConditionEffect duration="2">Slowed</ConditionEffect>
+    </Projectile>
+    <Labels>ENEMY</Labels>
+    <Presentation>
+      <Style id="SetAlt1">
         <StyleStep altTextureId="1">SetAltTexture</StyleStep>
-      </style>
-    </presentation>
-  </object>
-  <object type="0x0938" id="Arachna Web Spoke 2">
-    <displayid>Arachna Element</displayid>
-    <group>AttackType</group>
-    <class>Character</class>
-    <enemy/>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x25</index>
-    </texture>
-    <alttexture id="1">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x26</index>
-      </texture>
-    </alttexture>
-    <alttexture id="2">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x27</index>
-      </texture>
-    </alttexture>
-    <size>200</size>
-    <invincible/>
-    <projectile id="0">
-      <objectid>Web Thread</objectid>
-      <damage>0</damage>
-      <size>170</size>
-      <speed>50</speed>
-      <lifetimems>2030</lifetimems>
-      <conditioneffect duration="3">Slowed</conditioneffect>
-      <multihit/>
-    </projectile>
-    <projectile id="1">
-      <objectid>Web Star</objectid>
-      <damage>30</damage>
-      <speed>40</speed>
-      <size>100</size>
-      <lifetimems>5000</lifetimems>
-      <conditioneffect duration="2">Slowed</conditioneffect>
-    </projectile>
-    <labels>ENEMY</labels>
-    <presentation>
-      <style id="SetAlt1">
+      </Style>
+    </Presentation>
+  </Object>
+  <Object type="0x0938" id="Arachna Web Spoke 2">
+    <DisplayId>Arachna Element</DisplayId>
+    <Group>AttackType</Group>
+    <Class>Character</Class>
+    <Enemy />
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x25</Index>
+    </Texture>
+    <AltTexture id="1">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x26</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="2">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x27</Index>
+      </Texture>
+    </AltTexture>
+    <Size>200</Size>
+    <Invincible />
+    <Projectile id="0">
+      <ObjectId>Web Thread</ObjectId>
+      <Damage>0</Damage>
+      <Size>170</Size>
+      <Speed>50</Speed>
+      <LifetimeMS>2030</LifetimeMS>
+      <ConditionEffect duration="3">Slowed</ConditionEffect>
+      <MultiHit />
+    </Projectile>
+    <Projectile id="1">
+      <ObjectId>Web Star</ObjectId>
+      <Damage>30</Damage>
+      <Speed>40</Speed>
+      <Size>100</Size>
+      <LifetimeMS>5000</LifetimeMS>
+      <ConditionEffect duration="2">Slowed</ConditionEffect>
+    </Projectile>
+    <Labels>ENEMY</Labels>
+    <Presentation>
+      <Style id="SetAlt1">
         <StyleStep altTextureId="1">SetAltTexture</StyleStep>
-      </style>
-    </presentation>
-  </object>
-  <object type="0x0939" id="Arachna Web Spoke 3">
-    <displayid>Arachna Element</displayid>
-    <group>AttackType</group>
-    <class>Character</class>
-    <enemy/>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x25</index>
-    </texture>
-    <alttexture id="1">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x26</index>
-      </texture>
-    </alttexture>
-    <alttexture id="2">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x27</index>
-      </texture>
-    </alttexture>
-    <size>200</size>
-    <invincible/>
-    <projectile id="0">
-      <objectid>Web Thread</objectid>
-      <damage>0</damage>
-      <size>170</size>
-      <speed>50</speed>
-      <lifetimems>2030</lifetimems>
-      <conditioneffect duration="3">Slowed</conditioneffect>
-      <multihit/>
-    </projectile>
-    <projectile id="1">
-      <objectid>Web Star</objectid>
-      <damage>30</damage>
-      <speed>40</speed>
-      <size>100</size>
-      <lifetimems>5000</lifetimems>
-      <conditioneffect duration="2">Slowed</conditioneffect>
-    </projectile>
-    <labels>ENEMY</labels>
-    <presentation>
-      <style id="SetAlt1">
+      </Style>
+    </Presentation>
+  </Object>
+  <Object type="0x0939" id="Arachna Web Spoke 3">
+    <DisplayId>Arachna Element</DisplayId>
+    <Group>AttackType</Group>
+    <Class>Character</Class>
+    <Enemy />
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x25</Index>
+    </Texture>
+    <AltTexture id="1">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x26</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="2">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x27</Index>
+      </Texture>
+    </AltTexture>
+    <Size>200</Size>
+    <Invincible />
+    <Projectile id="0">
+      <ObjectId>Web Thread</ObjectId>
+      <Damage>0</Damage>
+      <Size>170</Size>
+      <Speed>50</Speed>
+      <LifetimeMS>2030</LifetimeMS>
+      <ConditionEffect duration="3">Slowed</ConditionEffect>
+      <MultiHit />
+    </Projectile>
+    <Projectile id="1">
+      <ObjectId>Web Star</ObjectId>
+      <Damage>30</Damage>
+      <Speed>40</Speed>
+      <Size>100</Size>
+      <LifetimeMS>5000</LifetimeMS>
+      <ConditionEffect duration="2">Slowed</ConditionEffect>
+    </Projectile>
+    <Labels>ENEMY</Labels>
+    <Presentation>
+      <Style id="SetAlt1">
         <StyleStep altTextureId="1">SetAltTexture</StyleStep>
-      </style>
-    </presentation>
-  </object>
-  <object type="0x093a" id="Arachna Web Spoke 4">
-    <displayid>Arachna Element</displayid>
-    <group>AttackType</group>
-    <class>Character</class>
-    <enemy/>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x25</index>
-    </texture>
-    <alttexture id="1">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x26</index>
-      </texture>
-    </alttexture>
-    <alttexture id="2">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x27</index>
-      </texture>
-    </alttexture>
-    <size>200</size>
-    <invincible/>
-    <projectile id="0">
-      <objectid>Web Thread</objectid>
-      <damage>0</damage>
-      <size>170</size>
-      <speed>50</speed>
-      <lifetimems>2030</lifetimems>
-      <conditioneffect duration="3">Slowed</conditioneffect>
-      <multihit/>
-    </projectile>
-    <projectile id="1">
-      <objectid>Web Star</objectid>
-      <damage>30</damage>
-      <speed>40</speed>
-      <size>100</size>
-      <lifetimems>5000</lifetimems>
-      <conditioneffect duration="2">Slowed</conditioneffect>
-    </projectile>
-    <labels>ENEMY</labels>
-    <presentation>
-      <style id="SetAlt1">
+      </Style>
+    </Presentation>
+  </Object>
+  <Object type="0x093a" id="Arachna Web Spoke 4">
+    <DisplayId>Arachna Element</DisplayId>
+    <Group>AttackType</Group>
+    <Class>Character</Class>
+    <Enemy />
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x25</Index>
+    </Texture>
+    <AltTexture id="1">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x26</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="2">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x27</Index>
+      </Texture>
+    </AltTexture>
+    <Size>200</Size>
+    <Invincible />
+    <Projectile id="0">
+      <ObjectId>Web Thread</ObjectId>
+      <Damage>0</Damage>
+      <Size>170</Size>
+      <Speed>50</Speed>
+      <LifetimeMS>2030</LifetimeMS>
+      <ConditionEffect duration="3">Slowed</ConditionEffect>
+      <MultiHit />
+    </Projectile>
+    <Projectile id="1">
+      <ObjectId>Web Star</ObjectId>
+      <Damage>30</Damage>
+      <Speed>40</Speed>
+      <Size>100</Size>
+      <LifetimeMS>5000</LifetimeMS>
+      <ConditionEffect duration="2">Slowed</ConditionEffect>
+    </Projectile>
+    <Labels>ENEMY</Labels>
+    <Presentation>
+      <Style id="SetAlt1">
         <StyleStep altTextureId="1">SetAltTexture</StyleStep>
-      </style>
-    </presentation>
-  </object>
-  <object type="0x093b" id="Arachna Web Spoke 5">
-    <displayid>Arachna Element</displayid>
-    <group>AttackType</group>
-    <class>Character</class>
-    <enemy/>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x25</index>
-    </texture>
-    <alttexture id="1">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x26</index>
-      </texture>
-    </alttexture>
-    <alttexture id="2">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x27</index>
-      </texture>
-    </alttexture>
-    <size>200</size>
-    <invincible/>
-    <projectile id="0">
-      <objectid>Web Thread</objectid>
-      <damage>0</damage>
-      <size>170</size>
-      <speed>50</speed>
-      <lifetimems>2030</lifetimems>
-      <conditioneffect duration="3">Slowed</conditioneffect>
-      <multihit/>
-    </projectile>
-    <projectile id="1">
-      <objectid>Web Star</objectid>
-      <damage>30</damage>
-      <speed>40</speed>
-      <size>100</size>
-      <lifetimems>5000</lifetimems>
-      <conditioneffect duration="2">Slowed</conditioneffect>
-    </projectile>
-    <labels>ENEMY</labels>
-    <presentation>
-      <style id="SetAlt1">
+      </Style>
+    </Presentation>
+  </Object>
+  <Object type="0x093b" id="Arachna Web Spoke 5">
+    <DisplayId>Arachna Element</DisplayId>
+    <Group>AttackType</Group>
+    <Class>Character</Class>
+    <Enemy />
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x25</Index>
+    </Texture>
+    <AltTexture id="1">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x26</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="2">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x27</Index>
+      </Texture>
+    </AltTexture>
+    <Size>200</Size>
+    <Invincible />
+    <Projectile id="0">
+      <ObjectId>Web Thread</ObjectId>
+      <Damage>0</Damage>
+      <Size>170</Size>
+      <Speed>50</Speed>
+      <LifetimeMS>2030</LifetimeMS>
+      <ConditionEffect duration="3">Slowed</ConditionEffect>
+      <MultiHit />
+    </Projectile>
+    <Projectile id="1">
+      <ObjectId>Web Star</ObjectId>
+      <Damage>30</Damage>
+      <Speed>40</Speed>
+      <Size>100</Size>
+      <LifetimeMS>5000</LifetimeMS>
+      <ConditionEffect duration="2">Slowed</ConditionEffect>
+    </Projectile>
+    <Labels>ENEMY</Labels>
+    <Presentation>
+      <Style id="SetAlt1">
         <StyleStep altTextureId="1">SetAltTexture</StyleStep>
-      </style>
-    </presentation>
-  </object>
-  <object type="0x093c" id="Arachna Web Spoke 6">
-    <displayid>Arachna Element</displayid>
-    <group>AttackType</group>
-    <class>Character</class>
-    <enemy/>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x25</index>
-    </texture>
-    <alttexture id="1">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x26</index>
-      </texture>
-    </alttexture>
-    <alttexture id="2">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x27</index>
-      </texture>
-    </alttexture>
-    <size>200</size>
-    <invincible/>
-    <projectile id="0">
-      <objectid>Web Thread</objectid>
-      <damage>0</damage>
-      <size>170</size>
-      <speed>50</speed>
-      <lifetimems>2030</lifetimems>
-      <conditioneffect duration="3">Slowed</conditioneffect>
-      <multihit/>
-    </projectile>
-    <projectile id="1">
-      <objectid>Web Star</objectid>
-      <damage>30</damage>
-      <speed>40</speed>
-      <size>100</size>
-      <lifetimems>5000</lifetimems>
-      <conditioneffect duration="2">Slowed</conditioneffect>
-    </projectile>
-    <labels>ENEMY</labels>
-    <presentation>
-      <style id="SetAlt1">
+      </Style>
+    </Presentation>
+  </Object>
+  <Object type="0x093c" id="Arachna Web Spoke 6">
+    <DisplayId>Arachna Element</DisplayId>
+    <Group>AttackType</Group>
+    <Class>Character</Class>
+    <Enemy />
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x25</Index>
+    </Texture>
+    <AltTexture id="1">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x26</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="2">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x27</Index>
+      </Texture>
+    </AltTexture>
+    <Size>200</Size>
+    <Invincible />
+    <Projectile id="0">
+      <ObjectId>Web Thread</ObjectId>
+      <Damage>0</Damage>
+      <Size>170</Size>
+      <Speed>50</Speed>
+      <LifetimeMS>2030</LifetimeMS>
+      <ConditionEffect duration="3">Slowed</ConditionEffect>
+      <MultiHit />
+    </Projectile>
+    <Projectile id="1">
+      <ObjectId>Web Star</ObjectId>
+      <Damage>30</Damage>
+      <Speed>40</Speed>
+      <Size>100</Size>
+      <LifetimeMS>5000</LifetimeMS>
+      <ConditionEffect duration="2">Slowed</ConditionEffect>
+    </Projectile>
+    <Labels>ENEMY</Labels>
+    <Presentation>
+      <Style id="SetAlt1">
         <StyleStep altTextureId="1">SetAltTexture</StyleStep>
-      </style>
-    </presentation>
-  </object>
-  <object type="0x093d" id="Arachna Web Spoke 7">
-    <displayid>Arachna Element</displayid>
-    <group>AttackType</group>
-    <class>Character</class>
-    <enemy/>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x25</index>
-    </texture>
-    <alttexture id="1">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x26</index>
-      </texture>
-    </alttexture>
-    <alttexture id="2">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x27</index>
-      </texture>
-    </alttexture>
-    <size>200</size>
-    <invincible/>
-    <projectile id="0">
-      <objectid>Web Thread</objectid>
-      <damage>0</damage>
-      <size>170</size>
-      <speed>50</speed>
-      <lifetimems>1230</lifetimems>
-      <conditioneffect duration="3">Slowed</conditioneffect>
-      <multihit/>
-    </projectile>
-    <projectile id="1">
-      <objectid>Web Star</objectid>
-      <damage>30</damage>
-      <speed>40</speed>
-      <size>100</size>
-      <lifetimems>5000</lifetimems>
-      <conditioneffect duration="2">Slowed</conditioneffect>
-    </projectile>
-    <labels>ENEMY</labels>
-    <presentation>
-      <style id="SetAlt1">
+      </Style>
+    </Presentation>
+  </Object>
+  <Object type="0x093d" id="Arachna Web Spoke 7">
+    <DisplayId>Arachna Element</DisplayId>
+    <Group>AttackType</Group>
+    <Class>Character</Class>
+    <Enemy />
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x25</Index>
+    </Texture>
+    <AltTexture id="1">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x26</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="2">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x27</Index>
+      </Texture>
+    </AltTexture>
+    <Size>200</Size>
+    <Invincible />
+    <Projectile id="0">
+      <ObjectId>Web Thread</ObjectId>
+      <Damage>0</Damage>
+      <Size>170</Size>
+      <Speed>50</Speed>
+      <LifetimeMS>1230</LifetimeMS>
+      <ConditionEffect duration="3">Slowed</ConditionEffect>
+      <MultiHit />
+    </Projectile>
+    <Projectile id="1">
+      <ObjectId>Web Star</ObjectId>
+      <Damage>30</Damage>
+      <Speed>40</Speed>
+      <Size>100</Size>
+      <LifetimeMS>5000</LifetimeMS>
+      <ConditionEffect duration="2">Slowed</ConditionEffect>
+    </Projectile>
+    <Labels>ENEMY</Labels>
+    <Presentation>
+      <Style id="SetAlt1">
         <StyleStep altTextureId="1">SetAltTexture</StyleStep>
-      </style>
-    </presentation>
-  </object>
-  <object type="0x093e" id="Arachna Web Spoke 8">
-    <displayid>Arachna Element</displayid>
-    <group>AttackType</group>
-    <class>Character</class>
-    <enemy/>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x25</index>
-    </texture>
-    <alttexture id="1">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x26</index>
-      </texture>
-    </alttexture>
-    <alttexture id="2">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x27</index>
-      </texture>
-    </alttexture>
-    <size>200</size>
-    <invincible/>
-    <projectile id="0">
-      <objectid>Web Thread</objectid>
-      <damage>0</damage>
-      <size>170</size>
-      <speed>50</speed>
-      <lifetimems>1230</lifetimems>
-      <conditioneffect duration="3">Slowed</conditioneffect>
-      <multihit/>
-    </projectile>
-    <projectile id="1">
-      <objectid>Web Star</objectid>
-      <damage>30</damage>
-      <speed>40</speed>
-      <size>100</size>
-      <lifetimems>5000</lifetimems>
-      <conditioneffect duration="2">Slowed</conditioneffect>
-    </projectile>
-    <labels>ENEMY</labels>
-    <presentation>
-      <style id="SetAlt1">
+      </Style>
+    </Presentation>
+  </Object>
+  <Object type="0x093e" id="Arachna Web Spoke 8">
+    <DisplayId>Arachna Element</DisplayId>
+    <Group>AttackType</Group>
+    <Class>Character</Class>
+    <Enemy />
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x25</Index>
+    </Texture>
+    <AltTexture id="1">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x26</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="2">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x27</Index>
+      </Texture>
+    </AltTexture>
+    <Size>200</Size>
+    <Invincible />
+    <Projectile id="0">
+      <ObjectId>Web Thread</ObjectId>
+      <Damage>0</Damage>
+      <Size>170</Size>
+      <Speed>50</Speed>
+      <LifetimeMS>1230</LifetimeMS>
+      <ConditionEffect duration="3">Slowed</ConditionEffect>
+      <MultiHit />
+    </Projectile>
+    <Projectile id="1">
+      <ObjectId>Web Star</ObjectId>
+      <Damage>30</Damage>
+      <Speed>40</Speed>
+      <Size>100</Size>
+      <LifetimeMS>5000</LifetimeMS>
+      <ConditionEffect duration="2">Slowed</ConditionEffect>
+    </Projectile>
+    <Labels>ENEMY</Labels>
+    <Presentation>
+      <Style id="SetAlt1">
         <StyleStep altTextureId="1">SetAltTexture</StyleStep>
-      </style>
-    </presentation>
-  </object>
-  <object type="0x093f" id="Arachna Web Spoke 9">
-    <displayid>Arachna Element</displayid>
-    <group>AttackType</group>
-    <class>Character</class>
-    <enemy/>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x25</index>
-    </texture>
-    <alttexture id="1">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x26</index>
-      </texture>
-    </alttexture>
-    <alttexture id="2">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x27</index>
-      </texture>
-    </alttexture>
-    <size>200</size>
-    <invincible/>
-    <projectile id="0">
-      <objectid>Web Thread</objectid>
-      <damage>0</damage>
-      <size>170</size>
-      <speed>50</speed>
-      <lifetimems>1230</lifetimems>
-      <conditioneffect duration="3">Slowed</conditioneffect>
-      <multihit/>
-    </projectile>
-    <projectile id="1">
-      <objectid>Web Star</objectid>
-      <damage>30</damage>
-      <speed>40</speed>
-      <size>100</size>
-      <lifetimems>5000</lifetimems>
-      <conditioneffect duration="2">Slowed</conditioneffect>
-    </projectile>
-    <labels>ENEMY</labels>
-    <presentation>
-      <style id="SetAlt1">
+      </Style>
+    </Presentation>
+  </Object>
+  <Object type="0x093f" id="Arachna Web Spoke 9">
+    <DisplayId>Arachna Element</DisplayId>
+    <Group>AttackType</Group>
+    <Class>Character</Class>
+    <Enemy />
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x25</Index>
+    </Texture>
+    <AltTexture id="1">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x26</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="2">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x27</Index>
+      </Texture>
+    </AltTexture>
+    <Size>200</Size>
+    <Invincible />
+    <Projectile id="0">
+      <ObjectId>Web Thread</ObjectId>
+      <Damage>0</Damage>
+      <Size>170</Size>
+      <Speed>50</Speed>
+      <LifetimeMS>1230</LifetimeMS>
+      <ConditionEffect duration="3">Slowed</ConditionEffect>
+      <MultiHit />
+    </Projectile>
+    <Projectile id="1">
+      <ObjectId>Web Star</ObjectId>
+      <Damage>30</Damage>
+      <Speed>40</Speed>
+      <Size>100</Size>
+      <LifetimeMS>5000</LifetimeMS>
+      <ConditionEffect duration="2">Slowed</ConditionEffect>
+    </Projectile>
+    <Labels>ENEMY</Labels>
+    <Presentation>
+      <Style id="SetAlt1">
         <StyleStep altTextureId="1">SetAltTexture</StyleStep>
-      </style>
-    </presentation>
-  </object>
-  <object type="0x21b" id="Spider Egg Sac">
-    <enemy/>
-    <class>Character</class>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x2e</index>
-    </texture>
-    <hitsound>monster/eggs_hit</hitsound>
-    <deathsound>monster/eggs_death</deathsound>
-    <minsize>70</minsize>
-    <maxsize>80</maxsize>
-    <sizestep>2</sizestep>
-    <maxhitpoints>1</maxhitpoints>
-    <exp>0</exp>
-    <sound id="0">monster/eggs_death</sound>
-    <alttexture id="1">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x28</index>
-      </texture>
-    </alttexture>
-    <alttexture id="2">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x2a</index>
-      </texture>
-    </alttexture>
-    <alttexture id="3">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x2c</index>
-      </texture>
-    </alttexture>
-    <alttexture id="4">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x30</index>
-      </texture>
-    </alttexture>
-    <killstat stat="NatureKills"/>
-    <labels>ENEMY,NATURE</labels>
-    <presentation>
-      <style id="SetAlt1">
+      </Style>
+    </Presentation>
+  </Object>
+  <Object type="0x21b" id="Spider Egg Sac">
+    <Enemy />
+    <Class>Character</Class>
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x2e</Index>
+    </Texture>
+    <HitSound>monster/eggs_hit</HitSound>
+    <DeathSound>monster/eggs_death</DeathSound>
+    <MinSize>70</MinSize>
+    <MaxSize>80</MaxSize>
+    <SizeStep>2</SizeStep>
+    <MaxHitPoints>1</MaxHitPoints>
+    <Exp>0</Exp>
+    <Sound id="0">monster/eggs_death</Sound>
+    <AltTexture id="1">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x28</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="2">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x2a</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="3">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x2c</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="4">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x30</Index>
+      </Texture>
+    </AltTexture>
+    <KillStat stat="NatureKills" />
+    <Labels>ENEMY,NATURE</Labels>
+    <Presentation>
+      <Style id="SetAlt1">
         <StyleStep altTextureId="1">SetAltTexture</StyleStep>
-      </style>
-      <style id="SetAlt2">
+      </Style>
+      <Style id="SetAlt2">
         <StyleStep altTextureId="2">SetAltTexture</StyleStep>
-      </style>
-      <style id="SetAlt3">
+      </Style>
+      <Style id="SetAlt3">
         <StyleStep altTextureId="3">SetAltTexture</StyleStep>
-      </style>
-      <style id="SetAlt4">
+      </Style>
+      <Style id="SetAlt4">
         <StyleStep altTextureId="4">SetAltTexture</StyleStep>
-      </style>
-    </presentation>
-  </object>
-  <object type="0x021c" id="Green Den Spider Hatchling">
-    <class>Character</class>
-    <animatedtexture>
-      <file>spiderDenChars8x8</file>
-      <index>3</index>
-    </animatedtexture>
-    <hitsound>monster/spiders_hit</hitsound>
-    <deathsound>monster/spiders_death</deathsound>
-    <size>75</size>
-    <maxhitpoints>50</maxhitpoints>
-    <enemy/>
-    <exp>3</exp>
-    <projectile>
-      <objectid>Green Spider Venom</objectid>
-      <speed>50</speed>
-      <damage>15</damage>
-      <lifetimems>3000</lifetimems>
-    </projectile>
-    <killstat stat="CritterKills"/>
-    <labels>ENEMY,MINION,CRITTER,MINION_WEAK</labels>
-    <specialspawn category="Heroic_Orb_Weak">Heroic Orb</specialspawn>
-    <specialspawn category="Swarm_Spider_Low_Spawner">Swarm Spider Low Spawner</specialspawn>
-  </object>
-  <object type="0x021d" id="Black Den Spider">
-    <class>Character</class>
-    <group>Den Spiders</group>
-    <animatedtexture>
-      <file>spiderDenChars8x8</file>
-      <index>0</index>
-    </animatedtexture>
-    <hitsound>monster/spiders_hit</hitsound>
-    <deathsound>monster/spiders_death</deathsound>
-    <size>115</size>
-    <maxhitpoints>350</maxhitpoints>
-    <exp>40</exp>
-    <enemy/>
-    <projectile>
-      <objectid>Purple Spider Venom</objectid>
-      <speed>40</speed>
-      <damage>50</damage>
-      <lifetimems>2000</lifetimems>
-    </projectile>
-    <killstat stat="CritterKills"/>
-    <labels>ENEMY,MINION,CRITTER,MINION_WEAK</labels>
-    <specialspawn category="Heroic_Orb_Weak">Heroic Orb</specialspawn>
-    <specialspawn category="Swarm_Spider_Low_Spawner">Swarm Spider Low Spawner</specialspawn>
-  </object>
-  <object type="0x021e" id="Red Spotted Den Spider">
-    <class>Character</class>
-    <group>Den Spiders</group>
-    <animatedtexture>
-      <file>spiderDenChars8x8</file>
-      <index>4</index>
-    </animatedtexture>
-    <hitsound>monster/spiders_hit</hitsound>
-    <deathsound>monster/spiders_death</deathsound>
-    <size>100</size>
-    <maxhitpoints>200</maxhitpoints>
-    <exp>40</exp>
-    <enemy/>
-    <projectile id="0">
-      <objectid>Red Spider Venom</objectid>
-      <speed>30</speed>
-      <damage>60</damage>
-      <lifetimems>800</lifetimems>
-    </projectile>
-    <projectile id="1">
-      <objectid>Red Spider Venom</objectid>
-      <speed>50</speed>
-      <damage>60</damage>
-      <lifetimems>800</lifetimems>
-    </projectile>
-    <projectile id="2">
-      <objectid>Red Spider Venom</objectid>
-      <speed>70</speed>
-      <damage>60</damage>
-      <lifetimems>800</lifetimems>
-    </projectile>
-    <killstat stat="CritterKills"/>
-    <labels>ENEMY,MINION,CRITTER,MINION_WEAK</labels>
-    <specialspawn category="Heroic_Orb_Weak">Heroic Orb</specialspawn>
-    <specialspawn category="Swarm_Spider_Low_Spawner">Swarm Spider Low Spawner</specialspawn>
-  </object>
-  <object type="0x021f" id="Black Spotted Den Spider">
-    <class>Character</class>
-    <group>Den Spiders</group>
-    <animatedtexture>
-      <file>spiderDenChars8x8</file>
-      <index>1</index>
-    </animatedtexture>
-    <hitsound>monster/spiders_hit</hitsound>
-    <deathsound>monster/spiders_death</deathsound>
-    <size>90</size>
-    <maxhitpoints>200</maxhitpoints>
-    <exp>40</exp>
-    <enemy/>
-    <projectile>
-      <objectid>Yellow Spider Venom</objectid>
-      <speed>80</speed>
-      <damage>40</damage>
-      <lifetimems>1250</lifetimems>
-    </projectile>
-    <killstat stat="CritterKills"/>
-    <labels>ENEMY,MINION,CRITTER,MINION_WEAK</labels>
-    <specialspawn category="Heroic_Orb_Weak">Heroic Orb</specialspawn>
-    <specialspawn category="Swarm_Spider_Low_Spawner">Swarm Spider Low Spawner</specialspawn>
-  </object>
-  <object type="0x0220" id="Brown Den Spider">
-    <class>Character</class>
-    <group>Den Spiders</group>
-    <animatedtexture>
-      <file>spiderDenChars8x8</file>
-      <index>2</index>
-    </animatedtexture>
-    <hitsound>monster/spiders_hit</hitsound>
-    <deathsound>monster/spiders_death</deathsound>
-    <size>80</size>
-    <maxhitpoints>100</maxhitpoints>
-    <exp>40</exp>
-    <enemy/>
-    <projectile>
-      <objectid>Blue Spider Venom</objectid>
-      <speed>80</speed>
-      <damage>20</damage>
-      <lifetimems>1250</lifetimems>
-      <size>60</size>
-    </projectile>
-    <killstat stat="CritterKills"/>
-    <labels>ENEMY,MINION,CRITTER,MINION_WEAK</labels>
-    <specialspawn category="Heroic_Orb_Weak">Heroic Orb</specialspawn>
-    <specialspawn category="Swarm_Spider_Low_Spawner">Swarm Spider Low Spawner</specialspawn>
-  </object>
-  <object type="0x374c" id="Spider Webbed Chest">
-    <enemy/>
-    <class>Character</class>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x46</index>
-    </texture>
-    <hitsound>monster/wooden_walls_hit</hitsound>
-    <deathsound>monster/wooden_walls_death</deathsound>
-    <size>100</size>
-    <maxhitpoints>750</maxhitpoints>
-    <exp>75</exp>
-    <defense>2</defense>
-    <sound id="0">monster/wooden_walls_death</sound>
-    <alttexture id="1">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x47</index>
-      </texture>
-    </alttexture>
-    <alttexture id="2">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x48</index>
-      </texture>
-    </alttexture>
-    <alttexture id="3">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x49</index>
-      </texture>
-    </alttexture>
-    <alttexture id="4">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x4a</index>
-      </texture>
-    </alttexture>
-    <alttexture id="5">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x4b</index>
-      </texture>
-    </alttexture>
-    <alttexture id="6">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x4c</index>
-      </texture>
-    </alttexture>
-    <alttexture id="7">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x4d</index>
-      </texture>
-    </alttexture>
-    <alttexture id="8">
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x4e</index>
-      </texture>
-    </alttexture>
-    <killstat stat="StructureKills"/>
-    <labels>CHEST</labels>
-    <presentation>
-      <style id="SetAlt1">
+      </Style>
+    </Presentation>
+  </Object>
+  <Object type="0x021c" id="Green Den Spider Hatchling">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>spiderDenChars8x8</File>
+      <Index>3</Index>
+    </AnimatedTexture>
+    <HitSound>monster/spiders_hit</HitSound>
+    <DeathSound>monster/spiders_death</DeathSound>
+    <Size>75</Size>
+    <MaxHitPoints>50</MaxHitPoints>
+    <Enemy />
+    <Exp>3</Exp>
+    <Projectile>
+      <ObjectId>Green Spider Venom</ObjectId>
+      <Speed>50</Speed>
+      <Damage>15</Damage>
+      <LifetimeMS>3000</LifetimeMS>
+    </Projectile>
+    <KillStat stat="CritterKills" />
+    <Labels>ENEMY,MINION,CRITTER,MINION_WEAK</Labels>
+    <SpecialSpawn category="Heroic_Orb_Weak">Heroic Orb</SpecialSpawn>
+    <SpecialSpawn category="Swarm_Spider_Low_Spawner">Swarm Spider Low Spawner</SpecialSpawn>
+  </Object>
+  <Object type="0x021d" id="Black Den Spider">
+    <Class>Character</Class>
+    <Group>Den Spiders</Group>
+    <AnimatedTexture>
+      <File>spiderDenChars8x8</File>
+      <Index>0</Index>
+    </AnimatedTexture>
+    <HitSound>monster/spiders_hit</HitSound>
+    <DeathSound>monster/spiders_death</DeathSound>
+    <Size>115</Size>
+    <MaxHitPoints>350</MaxHitPoints>
+    <Exp>40</Exp>
+    <Enemy />
+    <Projectile>
+      <ObjectId>Purple Spider Venom</ObjectId>
+      <Speed>40</Speed>
+      <Damage>50</Damage>
+      <LifetimeMS>2000</LifetimeMS>
+    </Projectile>
+    <KillStat stat="CritterKills" />
+    <Labels>ENEMY,MINION,CRITTER,MINION_WEAK</Labels>
+    <SpecialSpawn category="Heroic_Orb_Weak">Heroic Orb</SpecialSpawn>
+    <SpecialSpawn category="Swarm_Spider_Low_Spawner">Swarm Spider Low Spawner</SpecialSpawn>
+  </Object>
+  <Object type="0x021e" id="Red Spotted Den Spider">
+    <Class>Character</Class>
+    <Group>Den Spiders</Group>
+    <AnimatedTexture>
+      <File>spiderDenChars8x8</File>
+      <Index>4</Index>
+    </AnimatedTexture>
+    <HitSound>monster/spiders_hit</HitSound>
+    <DeathSound>monster/spiders_death</DeathSound>
+    <Size>100</Size>
+    <MaxHitPoints>200</MaxHitPoints>
+    <Exp>40</Exp>
+    <Enemy />
+    <Projectile id="0">
+      <ObjectId>Red Spider Venom</ObjectId>
+      <Speed>30</Speed>
+      <Damage>60</Damage>
+      <LifetimeMS>800</LifetimeMS>
+    </Projectile>
+    <Projectile id="1">
+      <ObjectId>Red Spider Venom</ObjectId>
+      <Speed>50</Speed>
+      <Damage>60</Damage>
+      <LifetimeMS>800</LifetimeMS>
+    </Projectile>
+    <Projectile id="2">
+      <ObjectId>Red Spider Venom</ObjectId>
+      <Speed>70</Speed>
+      <Damage>60</Damage>
+      <LifetimeMS>800</LifetimeMS>
+    </Projectile>
+    <KillStat stat="CritterKills" />
+    <Labels>ENEMY,MINION,CRITTER,MINION_WEAK</Labels>
+    <SpecialSpawn category="Heroic_Orb_Weak">Heroic Orb</SpecialSpawn>
+    <SpecialSpawn category="Swarm_Spider_Low_Spawner">Swarm Spider Low Spawner</SpecialSpawn>
+  </Object>
+  <Object type="0x021f" id="Black Spotted Den Spider">
+    <Class>Character</Class>
+    <Group>Den Spiders</Group>
+    <AnimatedTexture>
+      <File>spiderDenChars8x8</File>
+      <Index>1</Index>
+    </AnimatedTexture>
+    <HitSound>monster/spiders_hit</HitSound>
+    <DeathSound>monster/spiders_death</DeathSound>
+    <Size>90</Size>
+    <MaxHitPoints>200</MaxHitPoints>
+    <Exp>40</Exp>
+    <Enemy />
+    <Projectile>
+      <ObjectId>Yellow Spider Venom</ObjectId>
+      <Speed>80</Speed>
+      <Damage>40</Damage>
+      <LifetimeMS>1250</LifetimeMS>
+    </Projectile>
+    <KillStat stat="CritterKills" />
+    <Labels>ENEMY,MINION,CRITTER,MINION_WEAK</Labels>
+    <SpecialSpawn category="Heroic_Orb_Weak">Heroic Orb</SpecialSpawn>
+    <SpecialSpawn category="Swarm_Spider_Low_Spawner">Swarm Spider Low Spawner</SpecialSpawn>
+  </Object>
+  <Object type="0x0220" id="Brown Den Spider">
+    <Class>Character</Class>
+    <Group>Den Spiders</Group>
+    <AnimatedTexture>
+      <File>spiderDenChars8x8</File>
+      <Index>2</Index>
+    </AnimatedTexture>
+    <HitSound>monster/spiders_hit</HitSound>
+    <DeathSound>monster/spiders_death</DeathSound>
+    <Size>80</Size>
+    <MaxHitPoints>100</MaxHitPoints>
+    <Exp>40</Exp>
+    <Enemy />
+    <Projectile>
+      <ObjectId>Blue Spider Venom</ObjectId>
+      <Speed>80</Speed>
+      <Damage>20</Damage>
+      <LifetimeMS>1250</LifetimeMS>
+      <Size>60</Size>
+    </Projectile>
+    <KillStat stat="CritterKills" />
+    <Labels>ENEMY,MINION,CRITTER,MINION_WEAK</Labels>
+    <SpecialSpawn category="Heroic_Orb_Weak">Heroic Orb</SpecialSpawn>
+    <SpecialSpawn category="Swarm_Spider_Low_Spawner">Swarm Spider Low Spawner</SpecialSpawn>
+  </Object>
+  <Object type="0x374c" id="Spider Webbed Chest">
+    <Enemy />
+    <Class>Character</Class>
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x46</Index>
+    </Texture>
+    <HitSound>monster/wooden_walls_hit</HitSound>
+    <DeathSound>monster/wooden_walls_death</DeathSound>
+    <Size>100</Size>
+    <MaxHitPoints>750</MaxHitPoints>
+    <Exp>75</Exp>
+    <Defense>2</Defense>
+    <Sound id="0">monster/wooden_walls_death</Sound>
+    <AltTexture id="1">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x47</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="2">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x48</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="3">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x49</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="4">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x4a</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="5">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x4b</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="6">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x4c</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="7">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x4d</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="8">
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x4e</Index>
+      </Texture>
+    </AltTexture>
+    <KillStat stat="StructureKills" />
+    <Labels>CHEST</Labels>
+    <Presentation>
+      <Style id="SetAlt1">
         <StyleStep altTextureId="1">SetAltTexture</StyleStep>
-      </style>
-      <style id="SetAlt2">
+      </Style>
+      <Style id="SetAlt2">
         <StyleStep altTextureId="2">SetAltTexture</StyleStep>
-      </style>
-      <style id="SetAlt3">
+      </Style>
+      <Style id="SetAlt3">
         <StyleStep altTextureId="3">SetAltTexture</StyleStep>
-      </style>
-      <style id="SetAlt4">
+      </Style>
+      <Style id="SetAlt4">
         <StyleStep altTextureId="4">SetAltTexture</StyleStep>
-      </style>
-      <style id="SetAlt5">
+      </Style>
+      <Style id="SetAlt5">
         <StyleStep altTextureId="5">SetAltTexture</StyleStep>
-      </style>
-      <style id="SetAlt6">
+      </Style>
+      <Style id="SetAlt6">
         <StyleStep altTextureId="6">SetAltTexture</StyleStep>
-      </style>
-      <style id="SetAlt7">
+      </Style>
+      <Style id="SetAlt7">
         <StyleStep altTextureId="7">SetAltTexture</StyleStep>
-      </style>
-      <style id="SetAlt8">
+      </Style>
+      <Style id="SetAlt8">
         <StyleStep altTextureId="8">SetAltTexture</StyleStep>
-      </style>
-    </presentation>
-  </object>
-  <object type="0x3738" id="Spider Remnants">
-    <class>GameObject</class>
-    <randomtexture>
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x19</index>
-      </texture>
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x17</index>
-      </texture>
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x18</index>
-      </texture>
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x1a</index>
-      </texture>
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x1b</index>
-      </texture>
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x1c</index>
-      </texture>
-    </randomtexture>
-    <minsize>80</minsize>
-    <maxsize>100</maxsize>
-    <sizestep>5</sizestep>
-    <shadowsize>60</shadowsize>
-    <static/>
-  </object>
-  <object type="0x3739" id="Spider Foliage">
-    <class>GameObject</class>
-    <randomtexture>
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x1d</index>
-      </texture>
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x1e</index>
-      </texture>
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x1f</index>
-      </texture>
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x20</index>
-      </texture>
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x21</index>
-      </texture>
-    </randomtexture>
-    <minsize>70</minsize>
-    <maxsize>100</maxsize>
-    <sizestep>5</sizestep>
-    <static/>
-  </object>
-  <object type="0x373a" id="Spider Ground Web">
-    <class>GameObject</class>
-    <randomtexture>
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x0c</index>
-      </texture>
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x0d</index>
-      </texture>
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x0e</index>
-      </texture>
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x0f</index>
-      </texture>
-    </randomtexture>
-    <drawonground/>
-    <static/>
-  </object>
-  <object type="0x3759" id="Spider Scissors">
-    <class>GameObject</class>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x4f</index>
-    </texture>
-    <size>80</size>
-    <static/>
-  </object>
-  <object type="0x373b" id="Spider Ground Blood">
-    <class>GameObject</class>
-    <randomtexture>
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x22</index>
-      </texture>
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x23</index>
-      </texture>
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x24</index>
-      </texture>
-    </randomtexture>
-    <drawonground/>
-    <static/>
-  </object>
-  <object type="0x373c" id="Spider Broken Sac Green">
-    <class>GameObject</class>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x2f</index>
-    </texture>
-    <minsize>70</minsize>
-    <maxsize>80</maxsize>
-    <sizestep>2</sizestep>
-    <static/>
-  </object>
-  <object type="0x373d" id="Spider Broken Sac Black">
-    <class>GameObject</class>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x29</index>
-    </texture>
-    <size>100</size>
-    <static/>
-  </object>
-  <object type="0x373e" id="Spider Broken Sac Spotted">
-    <class>GameObject</class>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x2b</index>
-    </texture>
-    <size>100</size>
-    <static/>
-  </object>
-  <object type="0x373f" id="Spider Broken Sac Brown">
-    <class>GameObject</class>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x2d</index>
-    </texture>
-    <size>100</size>
-    <static/>
-  </object>
-  <object type="0x3740" id="Spider Broken Sac Red">
-    <class>GameObject</class>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x31</index>
-    </texture>
-    <size>100</size>
-    <static/>
-  </object>
-  <object type="0x3735" id="Spider Wall">
-    <class>Wall</class>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x10</index>
-    </texture>
-    <randomtexture>
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x10</index>
-      </texture>
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x38</index>
-      </texture>
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x39</index>
-      </texture>
-    </randomtexture>
-    <top>
-      <randomtexture>
-        <texture>
-          <file>spiderDenObjects8x8</file>
-          <index>0x16</index>
-        </texture>
-        <texture>
-          <file>spiderDenObjects8x8</file>
-          <index>0x32</index>
-        </texture>
-        <texture>
-          <file>spiderDenObjects8x8</file>
-          <index>0x33</index>
-        </texture>
-      </randomtexture>
-    </top>
-    <static/>
-    <fulloccupy/>
-    <occupysquare/>
-    <enemyoccupysquare/>
-    <blockssight/>
-  </object>
-  <object type="0x3736" id="Spider Wall Decor">
-    <class>Wall</class>
-    <randomtexture>
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x11</index>
-      </texture>
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x12</index>
-      </texture>
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x15</index>
-      </texture>
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x3a</index>
-      </texture>
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x3b</index>
-      </texture>
-      <texture>
-        <file>spiderDenObjects8x8</file>
-        <index>0x15</index>
-      </texture>
-    </randomtexture>
-    <top>
-      <randomtexture>
-        <texture>
-          <file>spiderDenObjects8x8</file>
-          <index>0x16</index>
-        </texture>
-        <texture>
-          <file>spiderDenObjects8x8</file>
-          <index>0x32</index>
-        </texture>
-        <texture>
-          <file>spiderDenObjects8x8</file>
-          <index>0x33</index>
-        </texture>
-      </randomtexture>
-    </top>
-    <static/>
-    <fulloccupy/>
-    <occupysquare/>
-    <enemyoccupysquare/>
-    <blockssight/>
-  </object>
-  <object type="0x3737" id="Spider Wall Eyes">
-    <class>Wall</class>
-    <texture>
-      <file>spiderDenObjects8x8</file>
-      <index>0x12</index>
-    </texture>
-    <top>
-      <randomtexture>
-        <texture>
-          <file>spiderDenObjects8x8</file>
-          <index>0x16</index>
-        </texture>
-        <texture>
-          <file>spiderDenObjects8x8</file>
-          <index>0x32</index>
-        </texture>
-        <texture>
-          <file>spiderDenObjects8x8</file>
-          <index>0x33</index>
-        </texture>
-      </randomtexture>
-    </top>
-    <animation prob="0.4" period="1.2">
-      <frame time="0.6">
-        <texture>
-          <file>spiderDenObjects8x8</file>
-          <index>0x13</index>
-        </texture>
-      </frame>
-      <frame time="0.6">
-        <texture>
-          <file>spiderDenObjects8x8</file>
-          <index>0x14</index>
-        </texture>
-      </frame>
-    </animation>
-    <static/>
-    <fulloccupy/>
-    <occupysquare/>
-    <enemyoccupysquare/>
-    <blockssight/>
-  </object>
-  <object type="0x3741" id="Spider Static Invisible Object">
-    <class>GameObject</class>
-    <texture>
-      <file>invisible</file>
-      <index>0</index>
-    </texture>
-    <static/>
-    <size>0</size>
-  </object>
-</objects>
+      </Style>
+    </Presentation>
+  </Object>
+  <Object type="0x3738" id="Spider Remnants">
+    <Class>GameObject</Class>
+    <RandomTexture>
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x19</Index>
+      </Texture>
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x17</Index>
+      </Texture>
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x18</Index>
+      </Texture>
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x1a</Index>
+      </Texture>
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x1b</Index>
+      </Texture>
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x1c</Index>
+      </Texture>
+    </RandomTexture>
+    <MinSize>80</MinSize>
+    <MaxSize>100</MaxSize>
+    <SizeStep>5</SizeStep>
+    <ShadowSize>60</ShadowSize>
+    <Static />
+  </Object>
+  <Object type="0x3739" id="Spider Foliage">
+    <Class>GameObject</Class>
+    <RandomTexture>
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x1d</Index>
+      </Texture>
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x1e</Index>
+      </Texture>
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x1f</Index>
+      </Texture>
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x20</Index>
+      </Texture>
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x21</Index>
+      </Texture>
+    </RandomTexture>
+    <MinSize>70</MinSize>
+    <MaxSize>100</MaxSize>
+    <SizeStep>5</SizeStep>
+    <Static />
+  </Object>
+  <Object type="0x373a" id="Spider Ground Web">
+    <Class>GameObject</Class>
+    <RandomTexture>
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x0c</Index>
+      </Texture>
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x0d</Index>
+      </Texture>
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x0e</Index>
+      </Texture>
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x0f</Index>
+      </Texture>
+    </RandomTexture>
+    <DrawOnGround />
+    <Static />
+  </Object>
+  <Object type="0x3759" id="Spider Scissors">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x4f</Index>
+    </Texture>
+    <Size>80</Size>
+    <Static />
+  </Object>
+  <Object type="0x373b" id="Spider Ground Blood">
+    <Class>GameObject</Class>
+    <RandomTexture>
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x22</Index>
+      </Texture>
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x23</Index>
+      </Texture>
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x24</Index>
+      </Texture>
+    </RandomTexture>
+    <DrawOnGround />
+    <Static />
+  </Object>
+  <Object type="0x373c" id="Spider Broken Sac Green">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x2f</Index>
+    </Texture>
+    <MinSize>70</MinSize>
+    <MaxSize>80</MaxSize>
+    <SizeStep>2</SizeStep>
+    <Static />
+  </Object>
+  <Object type="0x373d" id="Spider Broken Sac Black">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x29</Index>
+    </Texture>
+    <Size>100</Size>
+    <Static />
+  </Object>
+  <Object type="0x373e" id="Spider Broken Sac Spotted">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x2b</Index>
+    </Texture>
+    <Size>100</Size>
+    <Static />
+  </Object>
+  <Object type="0x373f" id="Spider Broken Sac Brown">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x2d</Index>
+    </Texture>
+    <Size>100</Size>
+    <Static />
+  </Object>
+  <Object type="0x3740" id="Spider Broken Sac Red">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x31</Index>
+    </Texture>
+    <Size>100</Size>
+    <Static />
+  </Object>
+  <Object type="0x3735" id="Spider Wall">
+    <Class>Wall</Class>
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x10</Index>
+    </Texture>
+    <RandomTexture>
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x10</Index>
+      </Texture>
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x38</Index>
+      </Texture>
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x39</Index>
+      </Texture>
+    </RandomTexture>
+    <Top>
+      <RandomTexture>
+        <Texture>
+          <File>spiderDenObjects8x8</File>
+          <Index>0x16</Index>
+        </Texture>
+        <Texture>
+          <File>spiderDenObjects8x8</File>
+          <Index>0x32</Index>
+        </Texture>
+        <Texture>
+          <File>spiderDenObjects8x8</File>
+          <Index>0x33</Index>
+        </Texture>
+      </RandomTexture>
+    </Top>
+    <Static />
+    <FullOccupy />
+    <OccupySquare />
+    <EnemyOccupySquare />
+    <BlocksSight />
+  </Object>
+  <Object type="0x3736" id="Spider Wall Decor">
+    <Class>Wall</Class>
+    <RandomTexture>
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x11</Index>
+      </Texture>
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x12</Index>
+      </Texture>
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x15</Index>
+      </Texture>
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x3a</Index>
+      </Texture>
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x3b</Index>
+      </Texture>
+      <Texture>
+        <File>spiderDenObjects8x8</File>
+        <Index>0x15</Index>
+      </Texture>
+    </RandomTexture>
+    <Top>
+      <RandomTexture>
+        <Texture>
+          <File>spiderDenObjects8x8</File>
+          <Index>0x16</Index>
+        </Texture>
+        <Texture>
+          <File>spiderDenObjects8x8</File>
+          <Index>0x32</Index>
+        </Texture>
+        <Texture>
+          <File>spiderDenObjects8x8</File>
+          <Index>0x33</Index>
+        </Texture>
+      </RandomTexture>
+    </Top>
+    <Static />
+    <FullOccupy />
+    <OccupySquare />
+    <EnemyOccupySquare />
+    <BlocksSight />
+  </Object>
+  <Object type="0x3737" id="Spider Wall Eyes">
+    <Class>Wall</Class>
+    <Texture>
+      <File>spiderDenObjects8x8</File>
+      <Index>0x12</Index>
+    </Texture>
+    <Top>
+      <RandomTexture>
+        <Texture>
+          <File>spiderDenObjects8x8</File>
+          <Index>0x16</Index>
+        </Texture>
+        <Texture>
+          <File>spiderDenObjects8x8</File>
+          <Index>0x32</Index>
+        </Texture>
+        <Texture>
+          <File>spiderDenObjects8x8</File>
+          <Index>0x33</Index>
+        </Texture>
+      </RandomTexture>
+    </Top>
+    <Animation prob="0.4" period="1.2">
+      <Frame time="0.6">
+        <Texture>
+          <File>spiderDenObjects8x8</File>
+          <Index>0x13</Index>
+        </Texture>
+      </Frame>
+      <Frame time="0.6">
+        <Texture>
+          <File>spiderDenObjects8x8</File>
+          <Index>0x14</Index>
+        </Texture>
+      </Frame>
+    </Animation>
+    <Static />
+    <FullOccupy />
+    <OccupySquare />
+    <EnemyOccupySquare />
+    <BlocksSight />
+  </Object>
+  <Object type="0x3741" id="Spider Static Invisible Object">
+    <Class>GameObject</Class>
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Static />
+    <Size>0</Size>
+  </Object>
+</Objects>
