@@ -11,7 +11,7 @@
 				"type": "object"
 			},
 			"sources": [
-				"/xml/players.xml"
+				"https://www.haizor.net/rotmg/assets/production/xml/players.xml"
 			]
 		},
 		{
@@ -23,9 +23,9 @@
 				"type": "object"
 			},
 			"sources": [
-				"/xml/equip.xml",
-				"/xml/spiderDenObjects.xml",
-				"/xml/equipmentsets.xml"
+				"https://www.haizor.net/rotmg/assets/production/xml/equip.xml",
+				"https://www.haizor.net/rotmg/assets/production/xml/spiderDenObjects.xml",
+				"https://www.haizor.net/rotmg/assets/production/xml/equipmentsets.xml"
 			]
 		},
 		{
@@ -33,7 +33,7 @@
 			"loader": "sprite-loader",
 			"sourceLoader": "url-to-text",
 			"sources": [
-				"/atlases/spritesheet.json"
+				"https://www.haizor.net/rotmg/assets/production/atlases/spritesheet.json"
 			]
 		}
 	]
