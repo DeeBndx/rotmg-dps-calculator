@@ -1,3 +1,6 @@
+# v0.3.3
+* Added dropdown for selecting between Production and Testing
+
 # v0.3.2
 * Added settings menu for changing simulation parameters
 * Fixed not being able to unequip items

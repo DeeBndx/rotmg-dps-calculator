@@ -14,6 +14,24 @@
 	align-items: center;
 }
 
+.dropdown > select {
+	transform: translateY(-5px);
+	border: 2px solid #fff;
+	border-radius: 0px;
+	background-color: var(--background-dark-gray);
+	font-weight: bolder;
+	color: #fff;
+	background: none;
+	margin: 0px 8px;
+
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+.dropdown > select:hover {
+	cursor: pointer;
+}
+
 .title {
 	margin-left: 8px;
 	margin-right: auto;
