@@ -1,3 +1,6 @@
+# v0.3.4
+* Added support for Mystic status abilities
+
 # v0.3.3
 * Added dropdown for selecting between Production and Testing.
 * Corrected supported classes for equipment tooltips.

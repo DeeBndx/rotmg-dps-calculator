@@ -1,4 +1,4 @@
-import { AbilityUseDiscount, Activate, BulletCreate, BulletNova, ConditionEffect, ConditionEffectSelf, Equipment, EquipmentSet, HealNova, Lightning, ObjectToss, PoisonGrenade, Proc, Projectile, Shoot, StatBoostSelf, Stats, StatusEffectType, Subattack, Trap, VampireBlast } from "@rotmg-mirror/rotmg-utils";
+import { AbilityUseDiscount, Activate, BulletCreate, BulletNova, ConditionEffect, ConditionEffectSelf, EffectBlast, Equipment, EquipmentSet, HealNova, Lightning, ObjectToss, PoisonGrenade, Proc, Projectile, Shoot, StatBoostSelf, Stats, StatusEffectType, Subattack, Trap, VampireBlast } from "@rotmg-mirror/rotmg-utils";
 import { AssetTypes, Manager } from "../asset";
 import { getEquipmentFromState, getPlayerFromState, hasStatusEffect, Item, PlayerState, PossibleItem } from "../features/player/setsSlice";
 import { SettingsState } from "../features/settingsSlice";
@@ -763,6 +763,12 @@ class TrapProvider extends OneTimeActivateProvider<Trap> {
 	}
 }
 
+class EffectBlastProvider extends OneTimeActivateProvider<EffectBlast> {
+	run(data: DPSProviderOptions): void {
+		data.enemyEffects.addEffect(this.activate.condEffect, this.activate.condDuration)
+	}
+}
+
 class VampireBlastProvider extends OneTimeActivateProvider<VampireBlast> {
 	run(data: DPSProviderOptions): void {
 		const stats = getStats(data.statsMap);
@@ -961,6 +967,7 @@ const ActivateProviders: {[key: string]: new (item: PossibleItem, equip: Equipme
 	"StatBoostAura": StatBoostProvider,
 	"VampireBlast": VampireBlastProvider,
 	"Trap": TrapProvider,
+	"EffectBlast": EffectBlastProvider, // Mystic
 	"ConditionEffectSelf": ConditionEffectProvider,
 	"ConditionEffectAura": ConditionEffectProvider,
 	"ObjectToss": ObjectTossProvider,
