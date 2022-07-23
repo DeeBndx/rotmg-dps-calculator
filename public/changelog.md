@@ -1,5 +1,6 @@
 # v0.3.4
 * Added support for Mystic status abilities
+* Made styling for dropdown for selecting between Production and Testing better for Chrome users.
 
 # v0.3.3
 * Added dropdown for selecting between Production and Testing.
