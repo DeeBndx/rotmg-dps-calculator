@@ -5,6 +5,8 @@ import { isActivateCalculated } from "../../dps/dps-calculator";
 import { getTextureForEffect } from "../../util";
 import SpriteComponent from "../SpriteComponent"
 import styles from "./Tooltip.module.css"
+import { AssetTypes, Manager } from "../../asset";
+import { Player as Utils_Player } from "@haizor/rotmg-utils";
 
 type Props = {
 	item: Item;
@@ -86,7 +88,8 @@ export default class Tooltip extends React.Component<Props, State> {
 	}
 
 	getUsableClassText(): string {
-		return "Wizard"
+		let usablePlayers = Manager.getAll<Utils_Player>(AssetTypes.Players).filter(e => e.slotTypes.includes(this.getItemData().slotType));
+		return usablePlayers.map(e => e.id).join(", ");
 	}
 
 	getDamageText(): string {
