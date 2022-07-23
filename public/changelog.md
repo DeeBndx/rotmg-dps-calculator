@@ -1,6 +1,7 @@
 # v0.3.3
 * Added dropdown for selecting between Production and Testing.
 * Corrected supported classes for equipment tooltips.
+* Fixed bug with empty input on equipment accuracy textbox becoming NaN
 
 # v0.3.2
 * Added settings menu for changing simulation parameters
