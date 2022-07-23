@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Item } from "@haizor/rotmg-utils";
+import { Item } from "@rotmg-mirror/rotmg-utils";
 import { getEquipment } from "../asset";
 import styles from "./EquipmentSlot.module.css";
 import TooltipProvider from "./tooltip/TooltipProvider";

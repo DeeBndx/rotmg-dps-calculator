@@ -1,12 +1,12 @@
 
 import React, { CSSProperties } from "react";
-import { Activate, BulletNova, ConditionEffectAura, ConditionEffectSelf, Decoy, EffectBlast, Equipment, EquipmentSet, HealNova, IncrementStat, Item, Lightning, PoisonGrenade, Projectile, SlotType, StatBoostAura, StatNames, Stats, StatusEffectType, Trap, VampireBlast } from "@haizor/rotmg-utils";
+import { Activate, BulletNova, ConditionEffectAura, ConditionEffectSelf, Decoy, EffectBlast, Equipment, EquipmentSet, HealNova, IncrementStat, Item, Lightning, PoisonGrenade, Projectile, SlotType, StatBoostAura, StatNames, Stats, StatusEffectType, Trap, VampireBlast } from "@rotmg-mirror/rotmg-utils";
 import { isActivateCalculated } from "../../dps/dps-calculator";
 import { getTextureForEffect } from "../../util";
 import SpriteComponent from "../SpriteComponent"
 import styles from "./Tooltip.module.css"
 import { AssetTypes, Manager } from "../../asset";
-import { Player as Utils_Player } from "@haizor/rotmg-utils";
+import { Player as Utils_Player } from "@rotmg-mirror/rotmg-utils";
 
 type Props = {
 	item: Item;

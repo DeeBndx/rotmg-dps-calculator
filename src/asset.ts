@@ -1,4 +1,4 @@
-import { AssetManager, AssetManagerConfig, Equipment, RotMGAssetLoader, RotMGCustomSpriteLoader, RotMGSpritesheetLoader } from "@haizor/rotmg-utils"
+import { AssetManager, AssetManagerConfig, Equipment, RotMGAssetLoader, RotMGCustomSpriteLoader, RotMGSpritesheetLoader } from "@rotmg-mirror/rotmg-utils"
 import { useAppSelector } from "./app/hooks";
 import { RootState } from "./app/store";
 import Sprite from "./components/SpriteComponent";

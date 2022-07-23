@@ -1184,16 +1184,6 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@haizor/rotmg-utils@^1.2.4":
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/@haizor/rotmg-utils/-/rotmg-utils-1.2.5.tgz#72b0115a03ca2397e4c703f194556dee0b582500"
-  integrity sha512-BYuuvwJfrMF0Njuf62Jl9mt6AaSCixiGGo6OVc5a/7AgQ+SqL0TsGioW8nSvcNUFSFjdp3+D9okCAlRU51Dw0w==
-  dependencies:
-    fast-xml-parser "^4.0.8"
-    jszip "^3.7.1"
-    minimist "^1.2.6"
-    reflect-metadata "^0.1.13"
-
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.5"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.9.5.tgz#2cbaf9a89460da24b5ca6531b8bbfc23e1df50c7"
@@ -1620,6 +1610,16 @@
     "@types/estree" "0.0.39"
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
+
+"@rotmg-mirror/rotmg-utils@^1.2.6":
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/@rotmg-mirror/rotmg-utils/-/rotmg-utils-1.2.6.tgz#5b84925abe9ad48356e90d0212844c2b208f7b97"
+  integrity sha512-qLEHCuGmmE+9KKMPpLbaQQXWm+5/jIfxt/3w3EOCAyAqcuYYsaPkdx+uVs4KynpuzXi95e/ir5R3/0z95X8scA==
+  dependencies:
+    fast-xml-parser "^4.0.8"
+    jszip "^3.7.1"
+    minimist "^1.2.6"
+    reflect-metadata "^0.1.13"
 
 "@rushstack/eslint-patch@^1.1.0":
   version "1.1.4"

@@ -12,7 +12,7 @@ import { createPortal } from "react-dom";
 import styles from "./DefenseGraph.module.css";
 import SpriteComponent from "./SpriteComponent";
 import { getTextureForEffect } from "../util";
-import { StatusEffectType } from "@haizor/rotmg-utils";
+import { StatusEffectType } from "@rotmg-mirror/rotmg-utils";
 import { SettingsState } from "../features/settingsSlice";
 
 Chart.register(...registerables);

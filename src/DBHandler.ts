@@ -1,5 +1,5 @@
 import JSZip from "jszip";
-import { AssetManager, AssetBundle } from "@haizor/rotmg-utils";
+import { AssetManager, AssetBundle } from "@rotmg-mirror/rotmg-utils";
 
 export default class DBHandler {
 	db: IDBDatabase | undefined;

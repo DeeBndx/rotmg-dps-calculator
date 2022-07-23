@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import ReactDOM from "react-dom";
-import { Item, Stats } from "@haizor/rotmg-utils";
+import { Item, Stats } from "@rotmg-mirror/rotmg-utils";
 import Tooltip from "./Tooltip";
 
 type Props = {

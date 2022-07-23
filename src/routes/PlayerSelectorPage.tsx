@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { Player } from "@haizor/rotmg-utils";
+import { Player } from "@rotmg-mirror/rotmg-utils";
 import { useAppDispatch } from "../app/hooks";
 import { AssetTypes, Manager } from "../asset";
 import { Modal } from "../components/Modal";
