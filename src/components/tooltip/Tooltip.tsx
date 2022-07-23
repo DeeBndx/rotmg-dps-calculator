@@ -1,6 +1,6 @@
 
 import React, { CSSProperties } from "react";
-import { Activate, BulletNova, ConditionEffectAura, ConditionEffectSelf, Decoy, EffectBlast, Equipment, EquipmentSet, HealNova, IncrementStat, Item, Lightning, PoisonGrenade, Projectile, StatBoostAura, StatNames, Stats, StatusEffectType, Trap, VampireBlast } from "@haizor/rotmg-utils";
+import { Activate, BulletNova, ConditionEffectAura, ConditionEffectSelf, Decoy, EffectBlast, Equipment, EquipmentSet, HealNova, IncrementStat, Item, Lightning, PoisonGrenade, Projectile, SlotType, StatBoostAura, StatNames, Stats, StatusEffectType, Trap, VampireBlast } from "@haizor/rotmg-utils";
 import { isActivateCalculated } from "../../dps/dps-calculator";
 import { getTextureForEffect } from "../../util";
 import SpriteComponent from "../SpriteComponent"
@@ -89,6 +89,10 @@ export default class Tooltip extends React.Component<Props, State> {
 
 	getUsableClassText(): string {
 		let slotType = this.getItemData().slotType;
+		if (slotType === SlotType.Ring) {
+			return "";
+		}
+
 		let usablePlayers = Manager.getAll<Utils_Player>(AssetTypes.Players).filter(e => e.slotTypes.includes(slotType));
 		return usablePlayers.map(e => e.id).join(", ");
 	}
