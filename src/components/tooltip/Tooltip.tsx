@@ -88,7 +88,8 @@ export default class Tooltip extends React.Component<Props, State> {
 	}
 
 	getUsableClassText(): string {
-		let usablePlayers = Manager.getAll<Utils_Player>(AssetTypes.Players).filter(e => e.slotTypes.includes(this.getItemData().slotType));
+		let slotType = this.getItemData().slotType;
+		let usablePlayers = Manager.getAll<Utils_Player>(AssetTypes.Players).filter(e => e.slotTypes.includes(slotType));
 		return usablePlayers.map(e => e.id).join(", ");
 	}
 
