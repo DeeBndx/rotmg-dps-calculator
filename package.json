@@ -4,7 +4,7 @@
   "private": true,
   "homepage": ".",
   "dependencies": {
-    "@rotmg-mirror/rotmg-utils": "^1.2.6",
+    "@rotmg-mirror/rotmg-utils": "^1.2.7",
     "@react-spring/web": "^9.4.5",
     "@reduxjs/toolkit": "^1.8.2",
     "@testing-library/jest-dom": "^5.16.4",

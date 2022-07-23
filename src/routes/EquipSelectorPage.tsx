@@ -36,7 +36,7 @@ function EquipSelectorPage() {
 		<div key={"none"} className={styles.remove + " highlightHover"} onClick={() => {dispatch(setEquipment([index, equipIndex, undefined])); navigate(-1)}}>
 			❌
 		</div>
-	), ...Manager.getAll<Equipment>(AssetTypes.Equipment).filter((eq => eq.slotType === player.slotTypes[equipIndex])).map((eq) => 
+	), ...Manager.getAll<Equipment>(AssetTypes.Equipment).filter((eq => eq.slotType === player.slotTypes[equipIndex] && eq.labels.includes("EQUIPMENT"))).map((eq) => 
 		<div key={eq.id} className={"highlightHover"} onClick={() => {dispatch(setEquipment([index, equipIndex, { id: eq.id }])); navigate(-1)}}>
 			<TooltipProvider item={new Item(eq)} player={{stats}}>
 				<SpriteComponent texture={eq.texture} />
