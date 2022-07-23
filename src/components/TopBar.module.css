@@ -14,19 +14,24 @@
 	align-items: center;
 }
 
+.dropdown {
+	display: flex;
+	height: 100%;
+	margin: 0px 8px;
+}
 .dropdown > select {
-	transform: translateY(-5px);
 	border: 2px solid #fff;
 	border-radius: 0px;
 	background-color: var(--background-dark-gray);
 	font-weight: bolder;
 	color: #fff;
 	background: none;
-	margin: 0px 8px;
-
-	appearance: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
+	margin: 5px 0px;
+	outline: none;
+}
+.dropdown > select:active {
+	background-color: var(--background-dark-gray);
+	color: #fff;
 }
 .dropdown > select:hover {
 	cursor: pointer;
