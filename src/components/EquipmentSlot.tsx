@@ -24,7 +24,11 @@ export const EquipmentSlot = ({setIndex, equipIndex, className}: EquipmentSlotPr
 	const stats = getStatsFromState(set);
 
 	const accuracyChange = (accuracy: number) => {
-		dispatch(setAccuracy([setIndex, equipIndex, accuracy]))
+		dispatch(setAccuracy([
+			setIndex, 
+			equipIndex, 
+			(!Number.isNaN(accuracy) ?  accuracy : 0)
+		]))
 	}
 
 	return (
