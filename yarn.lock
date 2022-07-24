@@ -1611,10 +1611,10 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
-"@rotmg-mirror/rotmg-utils@^1.2.7":
-  version "1.2.7"
-  resolved "https://registry.yarnpkg.com/@rotmg-mirror/rotmg-utils/-/rotmg-utils-1.2.7.tgz#cc6b1d200ee3a8ad4aa15033626f6e02b09d7874"
-  integrity sha512-GXgoGpN8oJI9jcyLyVP90T1g7LIm0+9rAjtHEWGOXr5HSYWgOlrF1ryspKmyRrUFmf6NDTBwMyn6Lsqs3B9A9w==
+"@rotmg-mirror/rotmg-utils@^1.2.8":
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/@rotmg-mirror/rotmg-utils/-/rotmg-utils-1.2.8.tgz#a0fe6b541729df2c615495516979a7708e64c6e5"
+  integrity sha512-+YWPBWnMG+LQ+MCScDXNhx5QyCF/I3aSsNscARwuEjjutRQzseghYKcEjknAI6szcdizkGxw97btYNIE0hFgbg==
   dependencies:
     fast-xml-parser "^4.0.8"
     jszip "^3.7.1"
