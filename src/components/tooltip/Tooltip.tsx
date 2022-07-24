@@ -56,11 +56,11 @@ export default class Tooltip extends React.Component<Props, State> {
 
 	getBorderURL(): string {
 		if (this.props.item.data.tier === "UT") {
-			return "https://haizor.net/rotmg/static/img/tooltip/ut-border.png";
+			return "https://rotmg-mirror.github.io/rotmg-metadata/static/img/tooltip/ut-border.png";
 		} else if (this.props.item.data.tier === "ST") {
-			return "https://haizor.net/rotmg/static/img/tooltip/st-border.png"
+			return "https://rotmg-mirror.github.io/rotmg-metadata/static/img/tooltip/st-border.png"
 		}
-		return "https://haizor.net/rotmg/static/img/tooltip/border.png"
+		return "https://rotmg-mirror.github.io/rotmg-metadata/static/img/tooltip/border.png"
 	}
 
 	getItemTierText(): string {
