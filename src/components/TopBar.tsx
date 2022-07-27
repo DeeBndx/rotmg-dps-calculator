@@ -38,7 +38,7 @@ export function TopBar() {
 		</div>
 
 		<div className={styles.title}>
-			Haizor.net
+			{window.location.hostname}
 		</div>
 	</div>
 }
