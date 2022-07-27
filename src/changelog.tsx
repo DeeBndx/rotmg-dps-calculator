@@ -1,7 +1,7 @@
 import { NavigateFunction } from "react-router-dom";
-import { version } from "../package.json"
+import pkg from "../package.json"
 
-export const currVersion = version;
+export const currVersion = pkg.version;
 export const prevVersionKey = "prevVersion"
 
 export async function getChangelog(): Promise<string> {
