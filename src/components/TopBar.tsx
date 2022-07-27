@@ -4,6 +4,7 @@ import { ReactComponent as SettingsIcon } from 'iconoir/icons/settings.svg'
 import { ReactComponent as FAQIcon } from 'iconoir/icons/question-mark-circle.svg'
 import { ReactComponent as HistoryIcon } from 'iconoir/icons/book-stack.svg'
 import { ReactComponent as GithubIcon } from 'iconoir/icons/github-outline.svg'
+import { ReactComponent as IssueIcon } from 'iconoir/icons/chat-bubble-warning.svg'
 
 
 export function TopBar() {
@@ -14,15 +15,16 @@ export function TopBar() {
 		{/* <a href="https://discord.com/invite/HFfu6sZ" target="_blank" rel="noreferrer">
 			<img className={styles.icon} src="discord_logo.svg" alt="Discord link" />
 		</a> */}
-		
+		<a href="https://github.com/jy1263/rotmg-dps-calculator/issues/new/choose" target="_blank" rel="noreferrer">
+			<IssueIcon className={styles.icon} title="Submit an Issue" />
+		</a>
+
 		<a href="https://github.com/jy1263/rotmg-dps-calculator" target="_blank" rel="noreferrer">
-			<GithubIcon className={styles.icon} />
-			{/* <img className={`${styles.icon} ${styles.github}`} src="github_icon.svg" alt="Github link" /> */}
+			<GithubIcon className={styles.icon} title="GitHub Repository" />
 		</a>
 
 		<div onClick={() => navigate("changelog")}>
 			<HistoryIcon className={`${styles.icon}`} title="Changelog" />
-			{/* <img className={`${styles.icon} ${styles.invert}`} src="changelog_icon.svg" alt="Changelog" /> */}
 		</div>
 
 		<div onClick={() => navigate("help")}>
