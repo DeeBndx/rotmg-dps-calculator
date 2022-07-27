@@ -14,6 +14,9 @@
 	align-items: center;
 }
 
+.topBar a { 
+	text-decoration: none; color: inherit; 
+}
 .topBar a:visited { 
 	text-decoration: none; color: inherit; 
 }
