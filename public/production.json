@@ -29,6 +29,18 @@
 			]
 		},
 		{
+			"loader": "rotmg-loader",
+			"type": "creeps",
+			"sourceLoader": "url-to-text",
+			"settings": {
+				"readOnly": true,
+				"type": "object"
+			},
+			"sources": [
+				"https://rotmg-mirror.github.io/rotmg-metadata/assets/production/xml/allies.xml"
+			]
+		},
+		{
 			"type": "sprites",
 			"loader": "sprite-loader",
 			"sourceLoader": "url-to-text",

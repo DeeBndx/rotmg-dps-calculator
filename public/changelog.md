@@ -1,3 +1,6 @@
+# v0.3.5
+* Added support for ***most*** Summon abilities
+
 # v0.3.4
 * Added support for Mystic status abilities
 * Made styling for dropdown for selecting between Production and Testing better for Chrome users.

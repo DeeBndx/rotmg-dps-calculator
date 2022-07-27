@@ -1,4 +1,4 @@
-import { AbilityUseDiscount, Activate, BulletCreate, BulletNova, ConditionEffect, ConditionEffectSelf, EffectBlast, Equipment, EquipmentSet, HealNova, Lightning, ObjectToss, PoisonGrenade, Proc, Projectile, Shoot, StatBoostSelf, Stats, StatusEffectType, Subattack, Trap, VampireBlast } from "@rotmg-mirror/rotmg-utils";
+import { AbilityUseDiscount, Activate, BulletCreate, BulletNova, ConditionEffect, ConditionEffectSelf, EffectBlast, Equipment, EquipmentSet, HealNova, Lightning, ObjectToss, PoisonGrenade, Proc, Projectile, Shoot, SpawnCreep, StatBoostSelf, Stats, StatusEffectType, Subattack, Trap, VampireBlast, XMLObject } from "@rotmg-mirror/rotmg-utils";
 import { AssetTypes, Manager } from "../asset";
 import { getEquipmentFromState, getPlayerFromState, hasStatusEffect, Item, PlayerState, PossibleItem } from "../features/player/setsSlice";
 import { SettingsState } from "../features/settingsSlice";
@@ -60,6 +60,37 @@ const EnemyEffects = [
 	StatusEffectType.Curse,
 	StatusEffectType.Exposed
 ]
+
+class CreepManager {
+	creeps: Array<[XMLObject, number]> = [];
+
+	addCreep(creep: XMLObject, duration: number) {
+		this.creeps.push([creep, duration]);
+	}
+
+	removeCreep(id: string) {
+		const index = this.creeps.findIndex(e => e[0].id === id);
+		if (index === -1) return;
+		this.creeps.splice(index, 1);
+	}
+
+	tick(elapsed: number) {
+		this.creeps.forEach(([key, value]) => {
+			value -= elapsed;
+			if (value < 0) {
+				this.creeps.splice(this.creeps.indexOf([key, value]), 1);
+			}
+		});
+	}
+
+	getCreeps() {
+		return [...this.creeps.map(e => e[0])];
+	}
+
+	hasCreep(id: string) {
+		return this.creeps.findIndex(e => e[0].id === id) !== -1;
+	}
+}
 
 class TimedBuffs {
 	buffs: {
@@ -374,6 +405,7 @@ export default class DPSCalculator {
 		let timedBuffs: TimedBuffs = new TimedBuffs();
 		let playerEffects = new StatusEffectManager();
 		let enemyEffects = new StatusEffectManager();
+		let playerCreeps = new CreepManager();
 
 		for (const effect of this.state.statusEffects) {
 			if (EnemyEffects.includes(effect)) {
@@ -412,6 +444,7 @@ export default class DPSCalculator {
 					timedBuffs,
 					playerEffects,
 					enemyEffects,
+					playerCreeps,
 					procDatas
 				})) {
 					const result = provider.getResult();
@@ -429,6 +462,7 @@ export default class DPSCalculator {
 
 			playerEffects.tick(this.simulationStep);
 			enemyEffects.tick(this.simulationStep);
+			playerCreeps.tick(this.simulationStep);
 
 			loopProviders = [...loopProviders, ...addQueue];
 			addQueue = [];
@@ -461,6 +495,7 @@ type DPSProviderOptions = {
 	timedBuffs: TimedBuffs;
 	playerEffects: StatusEffectManager;
 	enemyEffects: StatusEffectManager;
+	playerCreeps: CreepManager,
 	procDatas: ProcDatas;
 }
 
@@ -606,6 +641,7 @@ class AbilityDPSProvider implements DPSProvider {
 			this.useAbility(data, ability);
 			processProcs("abilityProcs", procDatas, this.state.equipment, this.equipment, data);
 			this.abilityUses--;
+			if (data.playerCreeps.getCreeps().length !== 3)
 			this.mana -= this.mpCost;
 		}
 
@@ -673,6 +709,9 @@ export abstract class TimedActivateProvider<T> extends ActivateProvider<T> {
 		this.totalTime += elapsed;
 	
 		if (this.totalTime > this.getDuration()) {
+			if (this.cleanup !== undefined) {
+				this.cleanup(data);
+			}
 			return false;
 		}
 
@@ -680,6 +719,8 @@ export abstract class TimedActivateProvider<T> extends ActivateProvider<T> {
 	}
 	
 	abstract run(data: DPSProviderOptions): void;
+
+	cleanup(data: DPSProviderOptions): void {};
 
 	abstract getDuration(): number;
 	abstract getInterval(): number;
@@ -749,6 +790,45 @@ class PoisonGrenadeProvider extends ActivateProvider<PoisonGrenade> {
 		this.time += data.elapsed;
 
 		return this.time < this.activate.duration;
+	}
+}
+
+class CreepProvider extends TimedActivateProvider<SpawnCreep> {
+	private _creep = Manager.get<XMLObject>("creeps", this.activate.objectId)?.value;
+	private _duration = Number(
+		this.equip.extraTooltipData
+		.find(x => x.name === "Lifetime")
+		?.description
+		.replace("seconds", "") ?? this.equip.cooldown);
+	private _firstrun = true;
+
+	run(data: DPSProviderOptions): void {
+		if (this._creep === undefined) return;
+		if (this._firstrun) {
+			console.log("spawned ")
+			data.playerCreeps.addCreep(this._creep, this._duration);
+			this._firstrun = false;
+		}
+		for (const proj of this._creep?.projectiles ?? []) {
+			this.dps += getAverageDamage(EmptyEffects, data.enemyEffects, proj, NormalStats, data.def);
+		}
+	}
+	getDuration(): number {
+		return this._duration;
+	}
+	getInterval(): number {
+		return 0.5;
+	}
+	cleanup(data: DPSProviderOptions) {
+		if (this._creep === undefined) return;
+		data.playerCreeps.removeCreep(this._creep.id);
+	}
+}
+
+class SpawnCreepProvider extends OneTimeActivateProvider<SpawnCreep> {
+	run(data: DPSProviderOptions): void {
+		if (data.playerCreeps.getCreeps().length >= 3) return;
+		data.addProvider(new CreepProvider(this.item, this.equip, this.activate))
 	}
 }
 
@@ -931,7 +1011,6 @@ class GenesisSpellProvider extends TimedActivateProvider<ObjectToss> {
 	getInterval(): number {
 		return 0.4;
 	}
-
 }
 
 class ChaoticScriptureProvider extends OneTimeActivateProvider<ObjectToss> {
@@ -972,7 +1051,8 @@ const ActivateProviders: {[key: string]: new (item: PossibleItem, equip: Equipme
 	"ConditionEffectAura": ConditionEffectProvider,
 	"ObjectToss": ObjectTossProvider,
 	"Lightning": LightningProvider,
-	"HealNova": HealNovaProvider
+	"HealNova": HealNovaProvider,
+	"SpawnCreep": SpawnCreepProvider
 }
 
 export function isActivateCalculated(key: string) {
