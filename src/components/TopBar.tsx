@@ -48,7 +48,7 @@ export function TopBar() {
 		</div>
 
 		<div className={styles.title}>
-			{window.location.hostname}
+			RotMG-Mirror Calculator (Formerly Haizor)
 		</div>
 	</div>
 }
