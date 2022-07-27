@@ -30,7 +30,8 @@
 	font-weight: bolder;
 	color: #fff;
 	background: none;
-	margin: 5px 0px;
+	margin-top: 3px;
+	margin-bottom: 6px;
 	outline: none;
 }
 .dropdown > select:active {
