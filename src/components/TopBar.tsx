@@ -21,12 +21,12 @@ export function TopBar() {
 		</a>
 
 		<div onClick={() => navigate("changelog")}>
-			<HistoryIcon className={`${styles.icon}`} />
+			<HistoryIcon className={`${styles.icon}`} title="Changelog" />
 			{/* <img className={`${styles.icon} ${styles.invert}`} src="changelog_icon.svg" alt="Changelog" /> */}
 		</div>
 
 		<div onClick={() => navigate("help")}>
-			<FAQIcon className={`${styles.icon}`} />
+			<FAQIcon className={`${styles.icon}`} title="FAQ" />
 			{/* <img className={`${styles.icon} ${styles.invert}`} src="help_icon.svg" alt="FAQ" /> */}
 		</div>
 
