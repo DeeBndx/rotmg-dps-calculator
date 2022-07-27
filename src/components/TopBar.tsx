@@ -1,5 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import styles from "./TopBar.module.css";
+import { ReactComponent as SettingsIcon } from 'iconoir/icons/settings.svg'
+import { ReactComponent as FAQIcon } from 'iconoir/icons/question-mark-circle.svg'
+import { ReactComponent as HistoryIcon } from 'iconoir/icons/book-stack.svg'
+import { ReactComponent as GithubIcon } from 'iconoir/icons/github-outline.svg'
+
 
 export function TopBar() {
 	const navigate = useNavigate();
@@ -11,19 +16,22 @@ export function TopBar() {
 		</a> */}
 		
 		<a href="https://github.com/jy1263/rotmg-dps-calculator" target="_blank" rel="noreferrer">
-			<img className={`${styles.icon} ${styles.github}`} src="github_icon.svg" alt="Github link" />
+			<GithubIcon className={styles.icon} />
+			{/* <img className={`${styles.icon} ${styles.github}`} src="github_icon.svg" alt="Github link" /> */}
 		</a>
 
 		<div onClick={() => navigate("changelog")}>
-			<img className={`${styles.icon} ${styles.invert}`} src="changelog_icon.svg" alt="Changelog" />
+			<HistoryIcon className={`${styles.icon}`} />
+			{/* <img className={`${styles.icon} ${styles.invert}`} src="changelog_icon.svg" alt="Changelog" /> */}
 		</div>
 
 		<div onClick={() => navigate("help")}>
-			<img className={`${styles.icon} ${styles.invert}`} src="help_icon.svg" alt="FAQ" />
+			<FAQIcon className={`${styles.icon}`} />
+			{/* <img className={`${styles.icon} ${styles.invert}`} src="help_icon.svg" alt="FAQ" /> */}
 		</div>
 
 		<div onClick={() => navigate("settings")}>
-			<img className={`${styles.icon} ${styles.invert}`} src="settings_icon.svg" alt="Settings" />
+			<SettingsIcon className={`${styles.icon}`} title="Settings" />
 		</div>
 
 		<div className={styles.dropdown}>
