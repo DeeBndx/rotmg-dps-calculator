@@ -6,11 +6,11 @@ export function TopBar() {
 	const params = new URLSearchParams(window.location.search);
 
 	return <div className={styles.topBar}>
-		<a href="https://discord.com/invite/HFfu6sZ" target="_blank" rel="noreferrer">
+		{/* <a href="https://discord.com/invite/HFfu6sZ" target="_blank" rel="noreferrer">
 			<img className={styles.icon} src="discord_logo.svg" alt="Discord link" />
-		</a>
+		</a> */}
 		
-		<a href="https://github.com/Haizor/rotmg-dps-calculator" target="_blank" rel="noreferrer">
+		<a href="https://github.com/jy1263/rotmg-dps-calculator" target="_blank" rel="noreferrer">
 			<img className={`${styles.icon} ${styles.github}`} src="github_icon.svg" alt="Github link" />
 		</a>
 
