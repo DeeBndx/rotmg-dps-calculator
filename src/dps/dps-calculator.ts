@@ -577,7 +577,7 @@ class WeaponDPSProvider implements DPSProvider {
 		
 		const currBurstDelay = Math.min(Math.max(weapon.burstDelay - ((weapon.burstDelay - weapon.burstMinDelay) / 100 * stats.dex), weapon.burstMinDelay), weapon.burstDelay);
 
-		return (weapon.burstCount / currBurstDelay)
+		return (weapon.burstCount / currBurstDelay) * (effects.hasEffect(StatusEffectType.Berserk) ? 1.25 : 1);
 
 	}
 
