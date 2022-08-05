@@ -1,5 +1,5 @@
 # v0.3.6
-* Burst weapon APS is now affected by Berzerk to reflect MotMG 2022 changes.
+* Burst weapon APS is now affected by Berzerk to reflect MotMG 2022 changes. Again however, "Burst support is kind of implemented, but it's probably wrong since I have virtually no info about it".
 
 # v0.3.5
 * Added support for ***most*** Summon abilities
