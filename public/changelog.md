@@ -1,3 +1,7 @@
+# v0.3.7
+* Weapons with equal min-damage and max-damage are now fixed (Ray Katana, etc.)
+Also, are there any TypeScript/React devs in the community willing to become a maintainer? I'm a bit busy from studying for university entrance exams so updates may be a bit spotty.
+
 # v0.3.6
 * Burst weapon APS is now affected by Berzerk to reflect MotMG 2022 changes. Again however, "Burst support is kind of implemented, but it's probably wrong since I have virtually no info about it".
 

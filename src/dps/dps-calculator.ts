@@ -265,6 +265,9 @@ function getAverageDamage(playerEffects: StatusEffectManager, enemyEffects: Stat
 		}
 		return damage
 	} else {
+		if (data.minDamage === data.maxDamage) {
+			data.maxDamage += 2;
+		}
 		for (let i = data.minDamage; i < data.maxDamage - 1; i++) {
 			let base = stats.getAttackDamage(i);
 			if (!weakened && playerEffects.hasEffect(StatusEffectType.Damaging)) {
